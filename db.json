@@ -1,0 +1,43 @@
+{
+    "satellites": [
+      {
+        "id": "SAT001",
+        "name": "Восход-1",
+        "type": "communication",
+        "status": "active",
+        "coordinates": {
+          "longitude": 45.5,
+          "latitude": -15.3
+        },
+        "orbitHeight": 550,
+        "speed": 7.5,
+        "temperature": {
+          "mainSystem": 25,
+          "communication": 30,
+          "powerUnit": 35
+        },
+        "batteryLevel": 85,
+        "lastUpdate": "2024-07-10T10:30:00Z"
+      },
+      {
+        "id": "SAT002",
+        "name": "Спутник-2",
+        "type": "weather",
+        "status": "active",
+        "coordinates": {
+          "longitude": 50.1,
+          "latitude": -12.8
+        },
+        "orbitHeight": 600,
+        "speed": 7.8,
+        "temperature": {
+          "mainSystem": 26,
+          "communication": 31,
+          "powerUnit": 36
+        },
+        "batteryLevel": 80,
+        "lastUpdate": "2024-07-10T10:45:00Z"
+      }
+      
+    ]
+  }
