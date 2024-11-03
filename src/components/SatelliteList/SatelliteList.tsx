@@ -1,10 +1,10 @@
-// src\components\SatelliteList\SatelliteList.tsx
+// src/components/SatelliteList/SatelliteList.tsx
 import React, { useEffect, useMemo, useState, useCallback } from 'react';
 import { useGetSatellitesQuery, randomizeSatelliteData, useUpdateSatelliteMutation } from '../../services/satellitesApi';
 import { FixedSizeList as List } from 'react-window';
 import './SatelliteList.css';
 
-const SatelliteList: React.FC = () => {
+const SatelliteList: React.FC = React.memo(() => {
   const { data: satellites, refetch } = useGetSatellitesQuery();
   const [updateSatellite] = useUpdateSatelliteMutation();
 
@@ -100,6 +100,6 @@ const SatelliteList: React.FC = () => {
       </List>
     </div>
   );
-};
+});
 
 export default SatelliteList;
