@@ -1,13 +1,15 @@
-// src/App.tsx
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { Suspense, lazy } from 'react';
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SatelliteListPage from './pages/SatelliteList/SatelliteList';
-import SatelliteDetail from './pages/SatelliteDetail/SatelliteDetail';
 import SatelliteStatus from './components/SatelliteStatus/SatelliteStatus';
+import SatelliteMap from './components/SatelliteMap/SatelliteMap';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import 'leaflet/dist/leaflet.css';
+
+// Ленивый импорт компонента SatelliteDetail
+const SatelliteDetail = lazy(() => import('./pages/SatelliteDetail/SatelliteDetail'));
 
 const App: React.FC = () => {
   return (
@@ -16,7 +18,14 @@ const App: React.FC = () => {
         <h1>Панель Мониторинга Спутников</h1>
         <Routes>
           <Route path="/" element={<SatelliteListPage />} />
-          <Route path="/satellite/:id" element={<SatelliteDetail />} />
+          <Route
+            path="/satellite/:id"
+            element={
+              <Suspense fallback={<div>Загрузка деталей спутника...</div>}>
+                <SatelliteDetail />
+              </Suspense>
+            }
+          />
         </Routes>
         <ToastContainer />
       </div>
