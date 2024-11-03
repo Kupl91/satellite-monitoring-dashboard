@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:src/pages/SatelliteDetail.tsx
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useGetSatelliteByIdQuery } from '../services/satellitesApi';
@@ -14,6 +15,15 @@ interface BatteryData {
   time: string;
   batteryLevel: number;
 }
+=======
+// src\pages\SatelliteDetail\SatelliteDetail.tsx
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import { useGetSatelliteByIdQuery } from '../../services/satellitesApi';
+import SatelliteDetails from '../../components/SatelliteDetails/SatelliteDetails';
+import SatelliteUpdater from '../../components/SatelliteUpdater/SatelliteUpdater';
+import './SatelliteDetail.css';
+>>>>>>> Stashed changes:src/pages/SatelliteDetail/SatelliteDetail.tsx
 
 const SatelliteDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();

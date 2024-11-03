@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< Updated upstream:src/pages/SatelliteList.tsx
 import { useGetSatellitesQuery } from '../services/satellitesApi';
 import { FixedSizeList as List } from 'react-window';
 import { useDispatch } from 'react-redux';
@@ -32,6 +33,12 @@ const SatelliteList: React.FC = () => {
       </div>
     );
   };
+=======
+import SatelliteList from '../../components/SatelliteList/SatelliteList';
+import SatelliteStatus from '../../components/SatelliteStatus/SatelliteStatus';
+import SatelliteMap from '../../components/SatelliteMap/SatelliteMap';
+import './SatelliteList.css';
+>>>>>>> Stashed changes:src/pages/SatelliteList/SatelliteList.tsx
 
   return (
     <div>

@@ -1,0 +1,14 @@
+.satellite-details {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.satellite-details h2 {
+  margin-top: 0;
+}
+
+.satellite-details ul {
+  list-style-type: none;
+  padding: 0;
+}

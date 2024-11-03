@@ -1,3 +1,4 @@
+//src\components\SatelliteMap\SatelliteMap.tsx
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { useGetSatellitesQuery } from '../services/satellitesApi';
