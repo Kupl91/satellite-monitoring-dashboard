@@ -6,17 +6,17 @@
       "type": "scientific",
       "status": "inactive",
       "coordinates": {
-        "longitude": -68.11460633218407,
-        "latitude": -4.2883782643251385
+        "longitude": -67.95592679923408,
+        "latitude": -1.94030390599259
       },
       "orbitHeight": 35554,
       "temperature": {
-        "mainSystem": -22.974775780745357,
-        "communication": 15.352693340234884,
-        "powerUnit": -20.321246735025884
+        "mainSystem": -22.41981437517682,
+        "communication": 15.701088800009899,
+        "powerUnit": -20.00185815951697
       },
       "batteryLevel": 6,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT002",
@@ -24,18 +24,18 @@
       "type": "communication",
       "status": "inactive",
       "coordinates": {
-        "longitude": 22.067458771567903,
-        "latitude": -81.92040619151926
+        "longitude": 23.172896601282773,
+        "latitude": -80.69459673861475
       },
       "orbitHeight": 22509,
-      "speed": 8.294682508982216,
+      "speed": 8.276294281975783,
       "temperature": {
-        "mainSystem": 45.873867305039255,
-        "communication": 36.052225232853296,
-        "powerUnit": -31.517570755850958
+        "mainSystem": 45.70993462190431,
+        "communication": 35.80647690894261,
+        "powerUnit": -31.87069350582344
       },
       "batteryLevel": 84,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT003",
@@ -43,18 +43,18 @@
       "type": "communication",
       "status": "inactive",
       "coordinates": {
-        "longitude": -142.25897441210566,
-        "latitude": 49.42041668451681
+        "longitude": -143.34092048837203,
+        "latitude": 49.07177587532017
       },
       "orbitHeight": 21381,
-      "speed": 6.912084066472629,
+      "speed": 7.199123306665932,
       "temperature": {
-        "mainSystem": -47.21818942607676,
-        "communication": 52.22599520830573,
-        "powerUnit": 17.44755193870034
+        "mainSystem": -47.45565930769709,
+        "communication": 50.160925490871804,
+        "powerUnit": 18.656909344704097
       },
       "batteryLevel": 95,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT004",
@@ -62,18 +62,18 @@
       "type": "scientific",
       "status": "active",
       "coordinates": {
-        "longitude": -5.4696943118359,
-        "latitude": 16.260918027350694
+        "longitude": -4.487236452050617,
+        "latitude": 14.853631509638454
       },
       "orbitHeight": 31560,
-      "speed": 8.222523006764517,
+      "speed": 8.291341189085355,
       "temperature": {
-        "mainSystem": -12.73621152349214,
-        "communication": -6.595165159163367,
-        "powerUnit": 5.33012525979148
+        "mainSystem": -13.87767549007653,
+        "communication": -8.625605884601832,
+        "powerUnit": 5.163381977881905
       },
       "batteryLevel": 76,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT005",
@@ -81,18 +81,18 @@
       "type": "navigation",
       "status": "inactive",
       "coordinates": {
-        "longitude": 76.16740393429498,
-        "latitude": -79.96366382421023
+        "longitude": 77.1259522829304,
+        "latitude": -77.67461141863144
       },
       "orbitHeight": 5819,
-      "speed": 6.940540031997468,
+      "speed": 6.962936672520137,
       "temperature": {
-        "mainSystem": 21.650890060302018,
-        "communication": 11.84590862809997,
-        "powerUnit": 8.724557567124755
+        "mainSystem": 20.665694146372118,
+        "communication": 12.43030438500115,
+        "powerUnit": 8.806554378844567
       },
       "batteryLevel": 83,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT006",
@@ -100,18 +100,18 @@
       "type": "communication",
       "status": "maintenance",
       "coordinates": {
-        "longitude": 95.31571341689101,
-        "latitude": 0.4913611869251029
+        "longitude": 95.46960963249094,
+        "latitude": -0.4389346276113715
       },
       "orbitHeight": 21626,
-      "speed": 7.633382268737906,
+      "speed": 7.302033445320589,
       "temperature": {
-        "mainSystem": -9.177767113719076,
-        "communication": -28.033125238292577,
-        "powerUnit": -28.87808016105446
+        "mainSystem": -10.131839808344713,
+        "communication": -28.473287141191282,
+        "powerUnit": -29.519413201950133
       },
       "batteryLevel": 40,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT007",
@@ -119,18 +119,18 @@
       "type": "navigation",
       "status": "maintenance",
       "coordinates": {
-        "longitude": -162.1580898653627,
-        "latitude": -7.587774122864744
+        "longitude": -161.00529498852103,
+        "latitude": -8.901306879799154
       },
       "orbitHeight": 4483,
-      "speed": 7.605007143970597,
+      "speed": 7.556490982506171,
       "temperature": {
-        "mainSystem": -20.10047155261186,
-        "communication": 38.10067420739583,
-        "powerUnit": -43.22194326278422
+        "mainSystem": -18.907062079265653,
+        "communication": 37.57381660750339,
+        "powerUnit": -43.204564436826
       },
       "batteryLevel": 33,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT008",
@@ -138,18 +138,18 @@
       "type": "scientific",
       "status": "active",
       "coordinates": {
-        "longitude": 11.337311686421836,
-        "latitude": 1.2453622159121802
+        "longitude": 9.936515681205394,
+        "latitude": 3.258504910126289
       },
       "orbitHeight": 15191,
-      "speed": 6.895947764708529,
+      "speed": 6.767274332619273,
       "temperature": {
-        "mainSystem": -5.492007540561678,
-        "communication": -10.77758022511835,
-        "powerUnit": -32.04432086749726
+        "mainSystem": -7.350092320605478,
+        "communication": -10.2907925608862,
+        "powerUnit": -34.79400901521549
       },
       "batteryLevel": 37,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT009",
@@ -157,18 +157,18 @@
       "type": "navigation",
       "status": "maintenance",
       "coordinates": {
-        "longitude": 167.54676034578551,
-        "latitude": -83.51294626108799
+        "longitude": 168.04247847634588,
+        "latitude": -83.85814586508228
       },
       "orbitHeight": 4911,
-      "speed": 7.6905308865789515,
+      "speed": 7.510406731170882,
       "temperature": {
-        "mainSystem": 38.11307323983012,
-        "communication": -47.97852211534658,
-        "powerUnit": -7.657390275312974
+        "mainSystem": 36.814929367451946,
+        "communication": -48.128344533520895,
+        "powerUnit": -7.1114404817865235
       },
       "batteryLevel": 0,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT010",
@@ -176,12 +176,12 @@
       "type": "navigation",
       "status": "maintenance",
       "coordinates": {
-        "longitude": 110.08845082360904,
-        "latitude": 90.02716758994939
+        "longitude": 110.04812418534387,
+        "latitude": 88.56287677775451
       },
       "orbitHeight": 328,
       "batteryLevel": 71,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT011",
@@ -189,18 +189,18 @@
       "type": "navigation",
       "status": "active",
       "coordinates": {
-        "longitude": 39.25804734896476,
-        "latitude": 31.617159101820796
+        "longitude": 38.377993001520224,
+        "latitude": 30.11186227619739
       },
       "orbitHeight": 15772,
-      "speed": 7.907945644502192,
+      "speed": 7.804787428658214,
       "temperature": {
-        "mainSystem": -41.052494737231726,
-        "communication": 13.32588040066684,
-        "powerUnit": -49.10044287949104
+        "mainSystem": -41.88848185855338,
+        "communication": 12.937245838203664,
+        "powerUnit": -47.14715417721802
       },
       "batteryLevel": 9,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT012",
@@ -208,18 +208,18 @@
       "type": "navigation",
       "status": "maintenance",
       "coordinates": {
-        "longitude": -7.151165775277763,
-        "latitude": -74.06473702627277
+        "longitude": -8.101918847779801,
+        "latitude": -71.1266814659651
       },
       "orbitHeight": 26125,
-      "speed": 6.858836513691818,
+      "speed": 6.825875711516473,
       "temperature": {
-        "mainSystem": 38.88740375884747,
-        "communication": -14.992669339153966,
-        "powerUnit": -11.180692637648457
+        "mainSystem": 37.96147028275633,
+        "communication": -14.612011174735443,
+        "powerUnit": -10.620686084577672
       },
       "batteryLevel": 79,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT013",
@@ -227,18 +227,18 @@
       "type": "communication",
       "status": "active",
       "coordinates": {
-        "longitude": 59.59317009672592,
-        "latitude": -38.63689214195202
+        "longitude": 61.05386024079451,
+        "latitude": -38.08015133491702
       },
       "orbitHeight": 19087,
-      "speed": 7.326522836960114,
+      "speed": 7.234827740414254,
       "temperature": {
-        "mainSystem": 0.25451130195029226,
-        "communication": 3.0263335820512,
-        "powerUnit": -15.797203488802511
+        "mainSystem": -0.3658749789936704,
+        "communication": 2.66062810225924,
+        "powerUnit": -16.348183536416343
       },
       "batteryLevel": 88,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT014",
@@ -246,18 +246,18 @@
       "type": "communication",
       "status": "inactive",
       "coordinates": {
-        "longitude": -11.791254805374681,
-        "latitude": 19.744188542843002
+        "longitude": -13.142576261489525,
+        "latitude": 20.264442792807845
       },
       "orbitHeight": 7141,
-      "speed": 7.499206602490256,
+      "speed": 7.5669170558562255,
       "temperature": {
-        "mainSystem": 31.593768814444502,
-        "communication": 38.18098348031139,
-        "powerUnit": -31.79595894289717
+        "mainSystem": 31.271496437123684,
+        "communication": 39.4307016631322,
+        "powerUnit": -29.45676809670968
       },
       "batteryLevel": 45,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT015",
@@ -265,13 +265,13 @@
       "type": "communication",
       "status": "inactive",
       "coordinates": {
-        "longitude": -115.22995379995582,
-        "latitude": 47.73954892977156
+        "longitude": -114.22058457707651,
+        "latitude": 48.1041967765787
       },
       "orbitHeight": 31112,
-      "speed": 7.156746887310572,
+      "speed": 7.222395928311018,
       "batteryLevel": 66,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT016",
@@ -279,18 +279,18 @@
       "type": "navigation",
       "status": "maintenance",
       "coordinates": {
-        "longitude": 116.80156928463364,
-        "latitude": -73.51569895466486
+        "longitude": 118.02550163736501,
+        "latitude": -75.27280681156056
       },
       "orbitHeight": 25592,
-      "speed": 6.5955952994961935,
+      "speed": 6.650648723563289,
       "temperature": {
-        "mainSystem": -45.46466427552863,
-        "communication": -44.97511736119361,
-        "powerUnit": 30.195210968152796
+        "mainSystem": -45.912914049206144,
+        "communication": -44.60527546427093,
+        "powerUnit": 28.751702296739666
       },
       "batteryLevel": 53,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT017",
@@ -298,18 +298,18 @@
       "type": "scientific",
       "status": "inactive",
       "coordinates": {
-        "longitude": 151.88505668632362,
-        "latitude": 80.33523857789531
+        "longitude": 149.5999698984781,
+        "latitude": 80.70696018149692
       },
       "orbitHeight": 19625,
-      "speed": 8.171560259877616,
+      "speed": 8.193860387002356,
       "temperature": {
-        "mainSystem": 25.896917524786687,
-        "communication": -5.383847472569215,
-        "powerUnit": 27.85040716122193
+        "mainSystem": 25.49569758457874,
+        "communication": -4.497251973576433,
+        "powerUnit": 28.5669962792587
       },
       "batteryLevel": 15,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT018",
@@ -317,18 +317,18 @@
       "type": "navigation",
       "status": "maintenance",
       "coordinates": {
-        "longitude": 58.47800122676762,
-        "latitude": 87.03027280875747
+        "longitude": 58.27788546401898,
+        "latitude": 87.78425608072175
       },
       "orbitHeight": 12548,
-      "speed": 8.375247343962066,
+      "speed": 8.365729864368546,
       "temperature": {
-        "mainSystem": -43.971381952117795,
-        "communication": -31.996422238413054,
-        "powerUnit": 10.579327309181
+        "mainSystem": -44.2034397976176,
+        "communication": -33.65224225342693,
+        "powerUnit": 13.407256444702451
       },
       "batteryLevel": 31,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT019",
@@ -336,18 +336,18 @@
       "type": "navigation",
       "status": "maintenance",
       "coordinates": {
-        "longitude": 109.59841598284093,
-        "latitude": 82.36918094227286
+        "longitude": 109.58524185662235,
+        "latitude": 81.21478945724499
       },
       "orbitHeight": 26694,
-      "speed": 8.02583171948194,
+      "speed": 8.281135809407175,
       "temperature": {
-        "mainSystem": 28.19520134225378,
-        "communication": -36.33945079310615,
-        "powerUnit": -33.36890286995078
+        "mainSystem": 29.106828830902415,
+        "communication": -36.83989965072804,
+        "powerUnit": -34.68433424273257
       },
       "batteryLevel": 64,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT020",
@@ -355,18 +355,18 @@
       "type": "navigation",
       "status": "active",
       "coordinates": {
-        "longitude": 43.32300479709593,
-        "latitude": -39.49879586920398
+        "longitude": 42.17556166558693,
+        "latitude": -41.346861078622304
       },
       "orbitHeight": 34226,
-      "speed": 7.071670157319067,
+      "speed": 7.0879262647389245,
       "temperature": {
-        "mainSystem": -7.109145769432151,
-        "communication": 17.047466902914294,
-        "powerUnit": -41.829516591946565
+        "mainSystem": -5.269138610735019,
+        "communication": 17.968748366022844,
+        "powerUnit": -41.55924462645718
       },
       "batteryLevel": 78,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT021",
@@ -374,18 +374,18 @@
       "type": "navigation",
       "status": "maintenance",
       "coordinates": {
-        "longitude": 89.42551904244316,
-        "latitude": 63.276324761491075
+        "longitude": 90.82196224236276,
+        "latitude": 63.15523072856472
       },
       "orbitHeight": 35872,
-      "speed": 7.356443352821855,
+      "speed": 7.257086788485603,
       "temperature": {
-        "mainSystem": 13.006222437855717,
-        "communication": 24.409747590377457,
-        "powerUnit": -17.926628570716527
+        "mainSystem": 13.719412977215338,
+        "communication": 22.83981333936832,
+        "powerUnit": -18.904950092140805
       },
       "batteryLevel": 30,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT022",
@@ -393,18 +393,18 @@
       "type": "scientific",
       "status": "inactive",
       "coordinates": {
-        "longitude": 54.23885673940967,
-        "latitude": 41.777974908814464
+        "longitude": 55.50009472335788,
+        "latitude": 40.52911865634869
       },
       "orbitHeight": 17296,
-      "speed": 6.861237542930874,
+      "speed": 6.810500980284681,
       "temperature": {
-        "mainSystem": 17.13191046788259,
-        "communication": -21.136000487536332,
-        "powerUnit": -46.663174773705904
+        "mainSystem": 16.07417634646583,
+        "communication": -19.637318177225154,
+        "powerUnit": -46.65468186068526
       },
       "batteryLevel": 93,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT023",
@@ -412,18 +412,18 @@
       "type": "scientific",
       "status": "maintenance",
       "coordinates": {
-        "longitude": -83.50144794091096,
-        "latitude": 2.5947892939851016
+        "longitude": -83.05484857284999,
+        "latitude": 0.9973220915382357
       },
       "orbitHeight": 29690,
-      "speed": 7.261479270804261,
+      "speed": 7.302794658927175,
       "temperature": {
-        "mainSystem": -29.20612421832532,
-        "communication": -20.771538963412265,
-        "powerUnit": -42.18044826648729
+        "mainSystem": -29.339076869015535,
+        "communication": -20.096476323611782,
+        "powerUnit": -42.867744129122876
       },
       "batteryLevel": 5,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT024",
@@ -431,18 +431,18 @@
       "type": "communication",
       "status": "inactive",
       "coordinates": {
-        "longitude": -51.9073796550344,
-        "latitude": 43.79050746390768
+        "longitude": -51.95383843653555,
+        "latitude": 43.501108581777686
       },
       "orbitHeight": 8132,
-      "speed": 7.366503205020532,
+      "speed": 7.375478281639335,
       "temperature": {
-        "mainSystem": -29.185955816103444,
-        "communication": -6.630860160984692,
-        "powerUnit": -4.689105435111106
+        "mainSystem": -28.525958122025397,
+        "communication": -5.500555688655975,
+        "powerUnit": -3.449533519397117
       },
       "batteryLevel": 64,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT025",
@@ -450,18 +450,18 @@
       "type": "navigation",
       "status": "maintenance",
       "coordinates": {
-        "longitude": -131.1383914572308,
-        "latitude": 15.43424940761974
+        "longitude": -131.52633076487805,
+        "latitude": 15.136443540130177
       },
       "orbitHeight": 26732,
-      "speed": 7.44952693417096,
+      "speed": 7.4583604443220874,
       "temperature": {
-        "mainSystem": -39.65886381997117,
-        "communication": 30.832750551892378,
-        "powerUnit": -28.63537627384798
+        "mainSystem": -41.29966846757422,
+        "communication": 29.441363318040377,
+        "powerUnit": -30.8135494289565
       },
       "batteryLevel": 42,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT026",
@@ -469,18 +469,18 @@
       "type": "navigation",
       "status": "inactive",
       "coordinates": {
-        "longitude": -140.54088834512982,
-        "latitude": 16.38008680066561
+        "longitude": -142.05425029511076,
+        "latitude": 16.664565834262223
       },
       "orbitHeight": 30192,
-      "speed": 7.180625683060756,
+      "speed": 7.04143277840596,
       "temperature": {
-        "mainSystem": -13.87733934345096,
-        "communication": -3.0074981460090533,
-        "powerUnit": 31.184041282393537
+        "mainSystem": -14.246492657533473,
+        "communication": -3.036636867469298,
+        "powerUnit": 28.551713003888565
       },
       "batteryLevel": 66,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT027",
@@ -488,18 +488,18 @@
       "type": "navigation",
       "status": "active",
       "coordinates": {
-        "longitude": -87.63170625818306,
-        "latitude": 40.54876094837804
+        "longitude": -84.29572053548819,
+        "latitude": 38.389056130344514
       },
       "orbitHeight": 8214,
-      "speed": 7.063147256952158,
+      "speed": 7.084840220383101,
       "temperature": {
-        "mainSystem": 27.326276985387086,
-        "communication": -25.47007418670905,
-        "powerUnit": -9.296072464270958
+        "mainSystem": 27.918827079413774,
+        "communication": -23.97212269258212,
+        "powerUnit": -9.6539001975083
       },
       "batteryLevel": 84,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT028",
@@ -507,18 +507,18 @@
       "type": "communication",
       "status": "active",
       "coordinates": {
-        "longitude": -108.10056139565751,
-        "latitude": -38.52477439552264
+        "longitude": -108.46168447270595,
+        "latitude": -36.87204240774292
       },
       "orbitHeight": 18007,
-      "speed": 6.900901862128197,
+      "speed": 6.860944382169283,
       "temperature": {
-        "mainSystem": 26.270577943820758,
-        "communication": 35.508072438078884,
-        "powerUnit": 30.29614968549645
+        "mainSystem": 25.415533444481017,
+        "communication": 34.10576265944346,
+        "powerUnit": 29.318538858149477
       },
       "batteryLevel": 57,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT029",
@@ -526,18 +526,18 @@
       "type": "navigation",
       "status": "active",
       "coordinates": {
-        "longitude": -78.2777835635642,
-        "latitude": 16.953941697694663
+        "longitude": -77.62689519805791,
+        "latitude": 16.30446786619513
       },
       "orbitHeight": 25770,
-      "speed": 7.4031535117890295,
+      "speed": 7.284170445487231,
       "temperature": {
-        "mainSystem": -19.49404207271901,
-        "communication": 45.248937968812925,
-        "powerUnit": 1.9569595447789867
+        "mainSystem": -19.004677223856632,
+        "communication": 46.122328997205514,
+        "powerUnit": 4.277240449503147
       },
       "batteryLevel": 21,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT030",
@@ -545,17 +545,17 @@
       "type": "communication",
       "status": "active",
       "coordinates": {
-        "longitude": 50.024228693385844,
-        "latitude": 52.566843309968085
+        "longitude": 50.80728346488275,
+        "latitude": 54.31909720992931
       },
       "orbitHeight": 11921,
       "temperature": {
-        "mainSystem": -34.26859767105596,
-        "communication": 52.48030985002002,
-        "powerUnit": -38.66425969673212
+        "mainSystem": -34.49916345366321,
+        "communication": 51.96071939215555,
+        "powerUnit": -40.762550290952944
       },
       "batteryLevel": 65,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT031",
@@ -563,18 +563,18 @@
       "type": "scientific",
       "status": "inactive",
       "coordinates": {
-        "longitude": 128.68073391050152,
-        "latitude": 41.797673723408415
+        "longitude": 128.3955602072779,
+        "latitude": 41.27443363189309
       },
       "orbitHeight": 23330,
-      "speed": 6.843875415708435,
+      "speed": 6.720566159473002,
       "temperature": {
-        "mainSystem": 8.256197173752662,
-        "communication": 40.90919960856466,
-        "powerUnit": 30.691875337700864
+        "mainSystem": 7.558128276216632,
+        "communication": 40.562294990483316,
+        "powerUnit": 29.98187772367986
       },
       "batteryLevel": 64,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT032",
@@ -582,18 +582,18 @@
       "type": "scientific",
       "status": "maintenance",
       "coordinates": {
-        "longitude": -174.20088492938666,
-        "latitude": -16.442619493654174
+        "longitude": -172.60503181959032,
+        "latitude": -15.667241381488756
       },
       "orbitHeight": 32286,
-      "speed": 7.619136859035574,
+      "speed": 7.670169496265544,
       "temperature": {
-        "mainSystem": -9.978880052739324,
-        "communication": 20.05143476312224,
-        "powerUnit": 9.30462476934477
+        "mainSystem": -11.42494721723633,
+        "communication": 18.8062373911238,
+        "powerUnit": 10.205881154808825
       },
       "batteryLevel": 64,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT033",
@@ -601,18 +601,18 @@
       "type": "scientific",
       "status": "maintenance",
       "coordinates": {
-        "longitude": -98.24847066852597,
-        "latitude": -81.55035731136005
+        "longitude": -97.19662622854823,
+        "latitude": -82.18546673712694
       },
       "orbitHeight": 9050,
-      "speed": 8.340243118014499,
+      "speed": 8.432056586943762,
       "temperature": {
-        "mainSystem": 13.147903220416236,
-        "communication": -9.254317742992303,
-        "powerUnit": 16.95008104421317
+        "mainSystem": 13.083055671630767,
+        "communication": -9.277798451758498,
+        "powerUnit": 16.065405393382733
       },
       "batteryLevel": 80,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT034",
@@ -620,18 +620,18 @@
       "type": "navigation",
       "status": "active",
       "coordinates": {
-        "longitude": 168.2153280106459,
-        "latitude": 43.65509651717064
+        "longitude": 168.57282735662162,
+        "latitude": 43.064837335047926
       },
       "orbitHeight": 21727,
-      "speed": 8.717519916099794,
+      "speed": 8.886947378746965,
       "temperature": {
-        "mainSystem": -8.604044812521725,
-        "communication": 1.494637721931647,
-        "powerUnit": -45.28513234228688
+        "mainSystem": -7.585083825929303,
+        "communication": -0.6668863525403057,
+        "powerUnit": -46.61817260896297
       },
       "batteryLevel": 49,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT035",
@@ -639,18 +639,18 @@
       "type": "navigation",
       "status": "active",
       "coordinates": {
-        "longitude": 130.72401944704586,
-        "latitude": 75.99847901223362
+        "longitude": 128.4788817090608,
+        "latitude": 74.21441351903353
       },
       "orbitHeight": 4797,
-      "speed": 7.855688034908798,
+      "speed": 7.8766882824502735,
       "temperature": {
-        "mainSystem": -10.771150712211895,
-        "communication": -29.07841610131554,
-        "powerUnit": 45.934040778238
+        "mainSystem": -8.685365182999572,
+        "communication": -29.001351847383997,
+        "powerUnit": 47.123499765755604
       },
       "batteryLevel": 35,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT036",
@@ -658,17 +658,17 @@
       "type": "scientific",
       "status": "inactive",
       "coordinates": {
-        "longitude": 48.77991055356415,
-        "latitude": 60.86931103112323
+        "longitude": 48.82203516418804,
+        "latitude": 61.135381104212556
       },
       "orbitHeight": 6109,
       "temperature": {
-        "mainSystem": 3.0552240301110896,
-        "communication": -38.2643800678845,
-        "powerUnit": -15.16506516165483
+        "mainSystem": 3.411278794734497,
+        "communication": -39.10706633890371,
+        "powerUnit": -13.637850759969691
       },
       "batteryLevel": 48,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT037",
@@ -676,18 +676,18 @@
       "type": "communication",
       "status": "inactive",
       "coordinates": {
-        "longitude": -153.2393583430716,
-        "latitude": -54.768545458559345
+        "longitude": -155.2689124208939,
+        "latitude": -53.69382740031707
       },
       "orbitHeight": 11419,
-      "speed": 7.438665610350314,
+      "speed": 7.326243123252566,
       "temperature": {
-        "mainSystem": 45.540847079880045,
-        "communication": 40.26675490800389,
-        "powerUnit": 29.488451661618168
+        "mainSystem": 46.27772556734026,
+        "communication": 37.354207352491166,
+        "powerUnit": 28.815772335487214
       },
       "batteryLevel": 15,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT038",
@@ -695,18 +695,18 @@
       "type": "communication",
       "status": "active",
       "coordinates": {
-        "longitude": 15.91890034626305,
-        "latitude": 64.65034223618126
+        "longitude": 17.324626874445453,
+        "latitude": 64.65293566047106
       },
       "orbitHeight": 14640,
-      "speed": 7.5086191589534685,
+      "speed": 7.370461151613244,
       "temperature": {
-        "mainSystem": 0.17116072097128399,
-        "communication": -37.51676126526759,
-        "powerUnit": 6.118845562414416
+        "mainSystem": -1.7480002200654234,
+        "communication": -36.98878214663841,
+        "powerUnit": 6.198114775036949
       },
       "batteryLevel": 37,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT039",
@@ -714,18 +714,18 @@
       "type": "communication",
       "status": "active",
       "coordinates": {
-        "longitude": -63.62950218752969,
-        "latitude": 95.64272882571771
+        "longitude": -64.59361942804094,
+        "latitude": 95.31788098770215
       },
       "orbitHeight": 868,
-      "speed": 8.143713577739438,
+      "speed": 8.259350093678876,
       "temperature": {
-        "mainSystem": -10.985442737735376,
-        "communication": 44.16502682353001,
-        "powerUnit": 10.488152941725211
+        "mainSystem": -12.28826552654327,
+        "communication": 44.71945020538242,
+        "powerUnit": 11.336862617066725
       },
       "batteryLevel": 33,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT040",
@@ -733,18 +733,18 @@
       "type": "communication",
       "status": "maintenance",
       "coordinates": {
-        "longitude": -146.52644231520608,
-        "latitude": -6.44633497364964
+        "longitude": -145.726949183587,
+        "latitude": -5.4613874121370305
       },
       "orbitHeight": 5330,
-      "speed": 7.187472093070574,
+      "speed": 7.25975003078652,
       "temperature": {
-        "mainSystem": 3.8018856957412703,
-        "communication": -20.067181207033265,
-        "powerUnit": -48.34827918618797
+        "mainSystem": 2.3735957054453123,
+        "communication": -21.287391485851433,
+        "powerUnit": -49.16941692985897
       },
       "batteryLevel": 65,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT041",
@@ -752,17 +752,17 @@
       "type": "communication",
       "status": "active",
       "coordinates": {
-        "longitude": 31.673669004757073,
-        "latitude": -10.72302322322485
+        "longitude": 30.823565505865222,
+        "latitude": -10.793805778959037
       },
       "orbitHeight": 33455,
       "temperature": {
-        "mainSystem": -15.17537540191023,
-        "communication": -23.891723765086812,
-        "powerUnit": 34.76594499287655
+        "mainSystem": -16.615509757322467,
+        "communication": -24.515666459836794,
+        "powerUnit": 34.67563542860526
       },
       "batteryLevel": 95,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT042",
@@ -770,18 +770,18 @@
       "type": "scientific",
       "status": "active",
       "coordinates": {
-        "longitude": -31.371821492092458,
-        "latitude": -20.560057473650257
+        "longitude": -33.1917080671895,
+        "latitude": -19.241085246527113
       },
       "orbitHeight": 21981,
-      "speed": 7.174205926430446,
+      "speed": 7.3341341332210845,
       "temperature": {
-        "mainSystem": -30.562911938709682,
-        "communication": -42.248856950816496,
-        "powerUnit": 37.0345951472496
+        "mainSystem": -30.086216957496813,
+        "communication": -43.08520058483488,
+        "powerUnit": 37.21103187792865
       },
       "batteryLevel": 96,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT043",
@@ -789,18 +789,18 @@
       "type": "navigation",
       "status": "inactive",
       "coordinates": {
-        "longitude": 126.76341907774538,
-        "latitude": 32.93789265854962
+        "longitude": 124.05192562314748,
+        "latitude": 34.68221381116533
       },
       "orbitHeight": 4419,
-      "speed": 7.555867737724391,
+      "speed": 7.540257753738316,
       "temperature": {
-        "mainSystem": 18.155430049712205,
-        "communication": -52.93702048459648,
-        "powerUnit": 43.41985743770963
+        "mainSystem": 17.88893294610846,
+        "communication": -55.43244518050372,
+        "powerUnit": 43.40933291423606
       },
       "batteryLevel": 28,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT044",
@@ -808,18 +808,18 @@
       "type": "navigation",
       "status": "active",
       "coordinates": {
-        "longitude": 73.67255944922144,
-        "latitude": 53.546516296865846
+        "longitude": 73.93763627160212,
+        "latitude": 53.56585732221796
       },
       "orbitHeight": 12200,
-      "speed": 8.086717530466174,
+      "speed": 8.075467948748313,
       "temperature": {
-        "mainSystem": 34.033539733718456,
-        "communication": 46.947723970575105,
-        "powerUnit": -40.81741755200524
+        "mainSystem": 35.9824356593104,
+        "communication": 45.79490735122907,
+        "powerUnit": -38.43712313386373
       },
       "batteryLevel": 38,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT045",
@@ -827,18 +827,18 @@
       "type": "navigation",
       "status": "maintenance",
       "coordinates": {
-        "longitude": -43.93065701143128,
-        "latitude": 44.137779824678326
+        "longitude": -43.28626208748037,
+        "latitude": 43.81208176868576
       },
       "orbitHeight": 13651,
-      "speed": 7.018068761119716,
+      "speed": 7.217576823900547,
       "temperature": {
-        "mainSystem": -11.064818564955576,
-        "communication": -23.769934091834905,
-        "powerUnit": -18.303134022095673
+        "mainSystem": -11.016309858458659,
+        "communication": -22.289643609327705,
+        "powerUnit": -20.83708588467819
       },
       "batteryLevel": 75,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT046",
@@ -846,18 +846,18 @@
       "type": "navigation",
       "status": "maintenance",
       "coordinates": {
-        "longitude": 178.82984504861568,
-        "latitude": 25.90331111618054
+        "longitude": 179.37549349973935,
+        "latitude": 24.148037210097794
       },
       "orbitHeight": 14105,
-      "speed": 7.077904532008032,
+      "speed": 7.386468438129629,
       "temperature": {
-        "mainSystem": 18.857112717020183,
-        "communication": 48.728683465087684,
-        "powerUnit": -13.787414203269973
+        "mainSystem": 18.943826640385875,
+        "communication": 49.91129758085294,
+        "powerUnit": -13.903534237310458
       },
       "batteryLevel": 72,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT047",
@@ -865,18 +865,18 @@
       "type": "communication",
       "status": "inactive",
       "coordinates": {
-        "longitude": 1.296973492642612,
-        "latitude": -22.606227775810208
+        "longitude": 0.5470231539138481,
+        "latitude": -21.063883028801346
       },
       "orbitHeight": 32584,
-      "speed": 7.907473754889184,
+      "speed": 7.937837795039813,
       "temperature": {
-        "mainSystem": -23.76909737529598,
-        "communication": -8.17806478722962,
-        "powerUnit": 18.044891974344115
+        "mainSystem": -24.922979273965442,
+        "communication": -8.303411924074684,
+        "powerUnit": 19.571547387493176
       },
       "batteryLevel": 41,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT048",
@@ -884,18 +884,18 @@
       "type": "navigation",
       "status": "maintenance",
       "coordinates": {
-        "longitude": -135.50367328766856,
-        "latitude": -78.55144649725301
+        "longitude": -135.9542625133861,
+        "latitude": -79.73021667570545
       },
       "orbitHeight": 530,
-      "speed": 8.282932474727511,
+      "speed": 8.355686712894535,
       "temperature": {
-        "mainSystem": -40.61011052408241,
-        "communication": -20.820160090228885,
-        "powerUnit": 10.323897915754156
+        "mainSystem": -40.231411055800116,
+        "communication": -20.03064230781136,
+        "powerUnit": 11.889506726650382
       },
       "batteryLevel": 99,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT049",
@@ -903,18 +903,18 @@
       "type": "scientific",
       "status": "active",
       "coordinates": {
-        "longitude": -42.26120526013379,
-        "latitude": -45.3278894106563
+        "longitude": -41.28274290158537,
+        "latitude": -46.00742946959185
       },
       "orbitHeight": 33917,
-      "speed": 7.636480735993322,
+      "speed": 7.605692266452598,
       "temperature": {
-        "mainSystem": -24.27397151293067,
-        "communication": -42.91302554262848,
-        "powerUnit": 54.233438197503695
+        "mainSystem": -21.644353542737804,
+        "communication": -43.15217132585711,
+        "powerUnit": 52.747095893143666
       },
       "batteryLevel": 11,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     },
     {
       "id": "SAT050",
@@ -922,18 +922,18 @@
       "type": "navigation",
       "status": "maintenance",
       "coordinates": {
-        "longitude": -94.34639247521794,
-        "latitude": 91.19559833714541
+        "longitude": -94.89165643082086,
+        "latitude": 90.2365064751671
       },
       "orbitHeight": 4731,
-      "speed": 7.792338906470524,
+      "speed": 7.6117986178684225,
       "temperature": {
-        "mainSystem": -11.985546521446281,
-        "communication": 31.572757493974215,
-        "powerUnit": -43.65894089066724
+        "mainSystem": -12.050220445817924,
+        "communication": 30.926130307903293,
+        "powerUnit": -44.75149946387092
       },
       "batteryLevel": 60,
-      "lastUpdate": "2024-11-03T21:18:09.482Z"
+      "lastUpdate": "2024-11-03T21:20:48.473Z"
     }
   ]
 }

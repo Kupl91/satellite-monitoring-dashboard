@@ -1,37 +1,40 @@
-// src/components/MapView/MapView.tsx
-import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { useNavigate } from 'react-router-dom';
-import L from 'leaflet';
-import { useGetSatellitesQuery } from '../../services/satellitesApi';
-import './MapView.css';
-import communicationIcon from '../../assets/communication-icon.png';
-import navigationIcon from '../../assets/navigation-icon.png';
-import scientificIcon from '../../assets/scientific-icon.png';
-import defaultIcon from '../../assets/default-icon.png';
+  // src/components/MapView/MapView.tsx
+  import React from 'react';
+  import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+  import { useNavigate } from 'react-router-dom';
+  import L from 'leaflet';
+  import { useGetSatellitesQuery } from '../../services/satellitesApi';
+  import './MapView.css';
+  import communicationIcon from '../../assets/communication-icon.png';
+  import navigationIcon from '../../assets/navigation-icon.png';
+  import scientificIcon from '../../assets/scientific-icon.png';
+  import defaultIcon from '../../assets/default-icon.png';
 
-const SatelliteIcon = (type: string) => {
-  let iconUrl = '';
-  switch (type) {
-    case 'communication':
-      iconUrl = '/icons/communication.png'; // Замените на реальные пути к иконкам
-      break;
-    case 'navigation':
-      iconUrl = '/icons/navigation.png';
-      break;
-    case 'scientific':
-      iconUrl = '/icons/scientific.png';
-      break;
-    default:
-      iconUrl = '/icons/default.png';
-  }
-  
-  return new L.Icon({
-    iconUrl,
+const icons = {
+  communication: L.icon({
+    iconUrl: communicationIcon,
     iconSize: [25, 25],
     iconAnchor: [12, 25],
     popupAnchor: [0, -25],
-  });
+  }),
+  navigation: L.icon({
+    iconUrl: navigationIcon,
+    iconSize: [25, 25],
+    iconAnchor: [12, 25],
+    popupAnchor: [0, -25],
+  }),
+  scientific: L.icon({
+    iconUrl: scientificIcon,
+    iconSize: [25, 25],
+    iconAnchor: [12, 25],
+    popupAnchor: [0, -25],
+  }),
+  default: L.icon({
+    iconUrl: defaultIcon,
+    iconSize: [25, 25],
+    iconAnchor: [12, 25],
+    popupAnchor: [0, -25],
+  }),
 };
 
 const MapView: React.FC = () => {
@@ -41,28 +44,30 @@ const MapView: React.FC = () => {
   if (isLoading) return <div>Загрузка карты...</div>;
   if (error) return <div>Ошибка при загрузке карты.</div>;
 
+  const handleMarkerClick = (id: string) => {
+    navigate(`/satellite/${id}`);
+  };
+
   return (
-    <MapContainer center={[0, 0]} zoom={2} style={{ height: '600px', width: '100%' }}>
+    <MapContainer center={[0, 0]} zoom={2} className="map-view">
       <TileLayer
-        attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution="&copy; OpenStreetMap contributors"
       />
-      {satellites?.map((satellite) => (
-        satellite.coordinates.latitude && satellite.coordinates.longitude ? (
+      {satellites?.map((sat) => (
+        sat.coordinates.latitude && sat.coordinates.longitude ? (
           <Marker
-            key={satellite.id}
-            position={[satellite.coordinates.latitude, satellite.coordinates.longitude]}
-            icon={SatelliteIcon(satellite.type)}
+            key={sat.id}
+            position={[sat.coordinates.latitude, sat.coordinates.longitude]}
+            icon={icons[sat.type] || icons.default}
             eventHandlers={{
-              click: () => {
-                navigate(`/satellite/${satellite.id}`);
-              },
+              click: () => handleMarkerClick(sat.id),
             }}
           >
             <Popup>
-              <strong>{satellite.name}</strong><br />
-              Тип: {satellite.type}<br />
-              Статус: {satellite.status}
+              <strong>{sat.name}</strong><br />
+              Тип: {sat.type}<br />
+              Статус: {sat.status}
             </Popup>
           </Marker>
         ) : null
