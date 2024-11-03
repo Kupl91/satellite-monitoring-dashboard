@@ -4,7 +4,7 @@ import { Satellite, SatellitesStatus } from '../types/satellite';
 
 export const satellitesApi = createApi({
   reducerPath: 'satellitesApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000/' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3001/' }),
   tagTypes: ['Satellites'],
   endpoints: (builder) => ({
     getSatellites: builder.query<Satellite[], void>({

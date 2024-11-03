@@ -1,3 +1,4 @@
+// src/App.tsx
 import React, { Suspense, lazy } from 'react';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SatelliteListPage from './pages/SatelliteList/SatelliteList';

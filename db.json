@@ -2,945 +2,938 @@
   "satellites": [
     {
       "id": "SAT001",
-      "name": "Восход-1",
-      "type": "communication",
-      "status": "active",
+      "name": "Спутник-1",
+      "type": "scientific",
+      "status": "inactive",
       "coordinates": {
-        "longitude": 45.5,
-        "latitude": -15.3
+        "longitude": -68.11460633218407,
+        "latitude": -4.2883782643251385
       },
-      "orbitHeight": 550,
-      "speed": 7.5,
+      "orbitHeight": 35554,
       "temperature": {
-        "mainSystem": 25,
-        "communication": 30,
-        "powerUnit": 35
+        "mainSystem": -22.974775780745357,
+        "communication": 15.352693340234884,
+        "powerUnit": -20.321246735025884
       },
-      "batteryLevel": 85,
-      "lastUpdate": "2024-07-10T10:30:00Z"
+      "batteryLevel": 6,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT002",
       "name": "Спутник-2",
-      "type": "weather",
-      "status": "active",
+      "type": "communication",
+      "status": "inactive",
       "coordinates": {
-        "longitude": 50.1,
-        "latitude": -12.8
+        "longitude": 22.067458771567903,
+        "latitude": -81.92040619151926
       },
-      "orbitHeight": 600,
-      "speed": 7.8,
+      "orbitHeight": 22509,
+      "speed": 8.294682508982216,
       "temperature": {
-        "mainSystem": 26,
-        "communication": 31,
-        "powerUnit": 36
+        "mainSystem": 45.873867305039255,
+        "communication": 36.052225232853296,
+        "powerUnit": -31.517570755850958
       },
-      "batteryLevel": 80,
-      "lastUpdate": "2024-07-10T10:45:00Z"
+      "batteryLevel": 84,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT003",
-      "name": "Навигатор-1",
-      "type": "navigation",
+      "name": "Спутник-3",
+      "type": "communication",
       "status": "inactive",
       "coordinates": {
-        "longitude": 110.4,
-        "latitude": 34.3
+        "longitude": -142.25897441210566,
+        "latitude": 49.42041668451681
       },
-      "orbitHeight": 20000,
-      "speed": null,
+      "orbitHeight": 21381,
+      "speed": 6.912084066472629,
       "temperature": {
-        "mainSystem": -10,
-        "communication": 5,
-        "powerUnit": 15
+        "mainSystem": -47.21818942607676,
+        "communication": 52.22599520830573,
+        "powerUnit": 17.44755193870034
       },
-      "batteryLevel": 65,
-      "lastUpdate": "10.07.2024 10:30:00"
+      "batteryLevel": 95,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT004",
-      "name": "Исследователь-1",
+      "name": "Спутник-4",
       "type": "scientific",
-      "status": "maintenance",
+      "status": "active",
       "coordinates": {
-        "longitude": -70.2,
-        "latitude": 40.7
+        "longitude": -5.4696943118359,
+        "latitude": 16.260918027350694
       },
-      "orbitHeight": 400,
-      "speed": 7.2,
-      "temperature": null,
-      "batteryLevel": 90,
-      "lastUpdate": "2024-07-10T11:00:00Z"
+      "orbitHeight": 31560,
+      "speed": 8.222523006764517,
+      "temperature": {
+        "mainSystem": -12.73621152349214,
+        "communication": -6.595165159163367,
+        "powerUnit": 5.33012525979148
+      },
+      "batteryLevel": 76,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT005",
-      "name": "Спутник-3",
-      "type": "weather",
-      "status": "active",
+      "name": "Спутник-5",
+      "type": "navigation",
+      "status": "inactive",
       "coordinates": {
-        "longitude": 60.5,
-        "latitude": -20.3
+        "longitude": 76.16740393429498,
+        "latitude": -79.96366382421023
       },
-      "orbitHeight": 700,
-      "speed": 7.6,
+      "orbitHeight": 5819,
+      "speed": 6.940540031997468,
       "temperature": {
-        "mainSystem": 20,
-        "communication": 25,
-        "powerUnit": 30
+        "mainSystem": 21.650890060302018,
+        "communication": 11.84590862809997,
+        "powerUnit": 8.724557567124755
       },
-      "batteryLevel": 75,
-      "lastUpdate": "10.07.2024 11:15:00"
+      "batteryLevel": 83,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT006",
-      "name": "Восход-2",
+      "name": "Спутник-6",
       "type": "communication",
-      "status": "inactive",
+      "status": "maintenance",
       "coordinates": {
-        "longitude": -100.4,
-        "latitude": 50.8
+        "longitude": 95.31571341689101,
+        "latitude": 0.4913611869251029
       },
-      "orbitHeight": 36000,
-      "speed": null,
+      "orbitHeight": 21626,
+      "speed": 7.633382268737906,
       "temperature": {
-        "mainSystem": -20,
-        "communication": -10,
-        "powerUnit": 0
+        "mainSystem": -9.177767113719076,
+        "communication": -28.033125238292577,
+        "powerUnit": -28.87808016105446
       },
-      "batteryLevel": 50,
-      "lastUpdate": "2024-07-10T12:00:00Z"
+      "batteryLevel": 40,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT007",
-      "name": "Навигатор-2",
+      "name": "Спутник-7",
       "type": "navigation",
       "status": "maintenance",
       "coordinates": {
-        "longitude": 130.5,
-        "latitude": -25.1
+        "longitude": -162.1580898653627,
+        "latitude": -7.587774122864744
       },
-      "orbitHeight": 20000,
-      "speed": 7.7,
-      "temperature": null,
-      "batteryLevel": 85,
-      "lastUpdate": "2024-07-10T12:30:00Z"
+      "orbitHeight": 4483,
+      "speed": 7.605007143970597,
+      "temperature": {
+        "mainSystem": -20.10047155261186,
+        "communication": 38.10067420739583,
+        "powerUnit": -43.22194326278422
+      },
+      "batteryLevel": 33,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT008",
-      "name": "Исследователь-2",
+      "name": "Спутник-8",
       "type": "scientific",
       "status": "active",
       "coordinates": {
-        "longitude": -120.3,
-        "latitude": 60.7
+        "longitude": 11.337311686421836,
+        "latitude": 1.2453622159121802
       },
-      "orbitHeight": 3000,
-      "speed": 7.4,
+      "orbitHeight": 15191,
+      "speed": 6.895947764708529,
       "temperature": {
-        "mainSystem": 0,
-        "communication": 10,
-        "powerUnit": 20
+        "mainSystem": -5.492007540561678,
+        "communication": -10.77758022511835,
+        "powerUnit": -32.04432086749726
       },
-      "batteryLevel": 40,
-      "lastUpdate": "2024-07-10T13:00:00Z"
+      "batteryLevel": 37,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT009",
-      "name": "Спутник-4",
-      "type": "weather",
-      "status": "active",
+      "name": "Спутник-9",
+      "type": "navigation",
+      "status": "maintenance",
       "coordinates": {
-        "longitude": 140.5,
-        "latitude": 75.6
+        "longitude": 167.54676034578551,
+        "latitude": -83.51294626108799
       },
-      "orbitHeight": 800,
-      "speed": 7.9,
+      "orbitHeight": 4911,
+      "speed": 7.6905308865789515,
       "temperature": {
-        "mainSystem": -5,
-        "communication": 5,
-        "powerUnit": 15
+        "mainSystem": 38.11307323983012,
+        "communication": -47.97852211534658,
+        "powerUnit": -7.657390275312974
       },
-      "batteryLevel": 70,
-      "lastUpdate": "10.07.2024 13:30:00"
+      "batteryLevel": 0,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT010",
-      "name": "Восход-3",
-      "type": "communication",
-      "status": "inactive",
+      "name": "Спутник-10",
+      "type": "navigation",
+      "status": "maintenance",
       "coordinates": {
-        "longitude": -150.6,
-        "latitude": -80.7
+        "longitude": 110.08845082360904,
+        "latitude": 90.02716758994939
       },
-      "orbitHeight": 36000,
-      "speed": null,
-      "temperature": {
-        "mainSystem": 30,
-        "communication": 40,
-        "powerUnit": 50
-      },
-      "batteryLevel": 95,
-      "lastUpdate": "2024-07-10T14:00:00Z"
+      "orbitHeight": 328,
+      "batteryLevel": 71,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
-      "id": "SAT0011",
+      "id": "SAT011",
       "name": "Спутник-11",
-      "type": "weather",
+      "type": "navigation",
       "status": "active",
       "coordinates": {
-        "longitude": 72.5,
-        "latitude": -15
+        "longitude": 39.25804734896476,
+        "latitude": 31.617159101820796
       },
-      "orbitHeight": 700,
-      "speed": 7.6,
+      "orbitHeight": 15772,
+      "speed": 7.907945644502192,
       "temperature": {
-        "mainSystem": 20,
-        "communication": 25,
-        "powerUnit": 30
+        "mainSystem": -41.052494737231726,
+        "communication": 13.32588040066684,
+        "powerUnit": -49.10044287949104
       },
-      "batteryLevel": 75,
-      "lastUpdate": "10.07.2024 11:30:00"
+      "batteryLevel": 9,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT012",
-      "name": "Навигатор-3",
+      "name": "Спутник-12",
       "type": "navigation",
-      "status": "active",
+      "status": "maintenance",
       "coordinates": {
-        "longitude": 130,
-        "latitude": 42
+        "longitude": -7.151165775277763,
+        "latitude": -74.06473702627277
       },
-      "orbitHeight": 20000,
-      "speed": 7.8,
+      "orbitHeight": 26125,
+      "speed": 6.858836513691818,
       "temperature": {
-        "mainSystem": 15,
-        "communication": 18,
-        "powerUnit": 25
+        "mainSystem": 38.88740375884747,
+        "communication": -14.992669339153966,
+        "powerUnit": -11.180692637648457
       },
-      "batteryLevel": 68,
-      "lastUpdate": "2024-07-11T10:45:00Z"
+      "batteryLevel": 79,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT013",
-      "name": "Исследователь-3",
-      "type": "scientific",
-      "status": "maintenance",
+      "name": "Спутник-13",
+      "type": "communication",
+      "status": "active",
       "coordinates": {
-        "longitude": -130,
-        "latitude": 22
+        "longitude": 59.59317009672592,
+        "latitude": -38.63689214195202
       },
-      "orbitHeight": 3000,
-      "speed": 7.5,
+      "orbitHeight": 19087,
+      "speed": 7.326522836960114,
       "temperature": {
-        "mainSystem": 12,
-        "communication": 14,
-        "powerUnit": 20
+        "mainSystem": 0.25451130195029226,
+        "communication": 3.0263335820512,
+        "powerUnit": -15.797203488802511
       },
-      "batteryLevel": 58,
-      "lastUpdate": "2024-07-12T10:30:00Z"
+      "batteryLevel": 88,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT014",
-      "name": "Спутник-12",
+      "name": "Спутник-14",
       "type": "communication",
       "status": "inactive",
       "coordinates": {
-        "longitude": 170,
-        "latitude": -20
+        "longitude": -11.791254805374681,
+        "latitude": 19.744188542843002
       },
-      "orbitHeight": 160,
-      "speed": null,
+      "orbitHeight": 7141,
+      "speed": 7.499206602490256,
       "temperature": {
-        "mainSystem": 22,
-        "communication": 27,
-        "powerUnit": 32
+        "mainSystem": 31.593768814444502,
+        "communication": 38.18098348031139,
+        "powerUnit": -31.79595894289717
       },
-      "batteryLevel": 42,
-      "lastUpdate": "2024-07-13T10:30:00Z"
+      "batteryLevel": 45,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT015",
-      "name": "Навигатор-4",
-      "type": "navigation",
-      "status": "active",
-      "coordinates": {
-        "longitude": 145,
-        "latitude": -25
-      },
-      "orbitHeight": 36000,
-      "speed": 8,
-      "temperature": {
-        "mainSystem": -5,
-        "communication": 0,
-        "powerUnit": 5
-      },
-      "batteryLevel": 88,
-      "lastUpdate": "2024-07-14T10:45:00Z"
-    },
-    {
-      "id": "SAT016",
-      "name": "Исследователь-4",
-      "type": "scientific",
-      "status": "maintenance",
-      "coordinates": {
-        "longitude": 120.5,
-        "latitude": 45.2
-      },
-      "orbitHeight": 1500,
-      "speed": 7.4,
-      "temperature": {
-        "mainSystem": 18,
-        "communication": 23,
-        "powerUnit": 28
-      },
-      "batteryLevel": 63,
-      "lastUpdate": "2024-07-14T11:30:00Z"
-    },
-    {
-      "id": "SAT017",
-      "name": "Спутник-13",
-      "type": "weather",
-      "status": "active",
-      "coordinates": {
-        "longitude": -95.5,
-        "latitude": 30.3
-      },
-      "orbitHeight": 800,
-      "speed": 7.7,
-      "temperature": {
-        "mainSystem": 10,
-        "communication": 15,
-        "powerUnit": 20
-      },
-      "batteryLevel": 72,
-      "lastUpdate": "10.07.2024 14:30:00"
-    },
-    {
-      "id": "SAT018",
-      "name": "Восход-4",
-      "type": "communication",
-      "status": "inactive",
-      "coordinates": {
-        "longitude": -85.6,
-        "latitude": -35.7
-      },
-      "orbitHeight": 36000,
-      "speed": null,
-      "temperature": {
-        "mainSystem": -15,
-        "communication": -10,
-        "powerUnit": -5
-      },
-      "batteryLevel": 55,
-      "lastUpdate": "2024-07-14T15:00:00Z"
-    },
-    {
-      "id": "SAT019",
-      "name": "Навигатор-5",
-      "type": "navigation",
-      "status": "active",
-      "coordinates": {
-        "longitude": 135.5,
-        "latitude": 50.5
-      },
-      "orbitHeight": 20000,
-      "speed": 7.9,
-      "temperature": {
-        "mainSystem": 5,
-        "communication": 10,
-        "powerUnit": 15
-      },
-      "batteryLevel": 81,
-      "lastUpdate": "2024-07-14T15:30:00Z"
-    },
-    {
-      "id": "SAT020",
-      "name": "Исследователь-5",
-      "type": "scientific",
-      "status": "maintenance",
-      "coordinates": {
-        "longitude": 65.3,
-        "latitude": 25.8
-      },
-      "orbitHeight": 3000,
-      "speed": 7.6,
-      "temperature": {
-        "mainSystem": 8,
-        "communication": 12,
-        "powerUnit": 18
-      },
-      "batteryLevel": 68,
-      "lastUpdate": "10.07.2024 15:45:00"
-    },
-    {
-      "id": "SAT021",
-      "name": "Спутник-14",
-      "type": "weather",
-      "status": "active",
-      "coordinates": {
-        "longitude": 100.5,
-        "latitude": -10.4
-      },
-      "orbitHeight": 900,
-      "speed": 7.8,
-      "temperature": {
-        "mainSystem": 22,
-        "communication": 27,
-        "powerUnit": 32
-      },
-      "batteryLevel": 77,
-      "lastUpdate": "10.07.2024 16:00:00"
-    },
-    {
-      "id": "SAT022",
-      "name": "Навигатор-6",
-      "type": "navigation",
-      "status": "active",
-      "coordinates": {
-        "longitude": 140,
-        "latitude": 35.2
-      },
-      "orbitHeight": 20000,
-      "speed": 7.7,
-      "temperature": {
-        "mainSystem": 16,
-        "communication": 21,
-        "powerUnit": 25
-      },
-      "batteryLevel": 65,
-      "lastUpdate": "2024-07-14T16:30:00Z"
-    },
-    {
-      "id": "SAT023",
-      "name": "Исследователь-6",
-      "type": "scientific",
-      "status": "maintenance",
-      "coordinates": {
-        "longitude": -110.4,
-        "latitude": 55.2
-      },
-      "orbitHeight": 1500,
-      "speed": 7.5,
-      "temperature": {
-        "mainSystem": 14,
-        "communication": 18,
-        "powerUnit": 24
-      },
-      "batteryLevel": 58,
-      "lastUpdate": "2024-07-14T17:00:00Z"
-    },
-    {
-      "id": "SAT024",
       "name": "Спутник-15",
       "type": "communication",
       "status": "inactive",
       "coordinates": {
-        "longitude": 80.5,
-        "latitude": -30.6
+        "longitude": -115.22995379995582,
+        "latitude": 47.73954892977156
       },
-      "orbitHeight": 36000,
-      "speed": null,
+      "orbitHeight": 31112,
+      "speed": 7.156746887310572,
+      "batteryLevel": 66,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
+    },
+    {
+      "id": "SAT016",
+      "name": "Спутник-16",
+      "type": "navigation",
+      "status": "maintenance",
+      "coordinates": {
+        "longitude": 116.80156928463364,
+        "latitude": -73.51569895466486
+      },
+      "orbitHeight": 25592,
+      "speed": 6.5955952994961935,
       "temperature": {
-        "mainSystem": 18,
-        "communication": 22,
-        "powerUnit": 27
+        "mainSystem": -45.46466427552863,
+        "communication": -44.97511736119361,
+        "powerUnit": 30.195210968152796
       },
-      "batteryLevel": 52,
-      "lastUpdate": "2024-07-14T17:30:00Z"
+      "batteryLevel": 53,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
+    },
+    {
+      "id": "SAT017",
+      "name": "Спутник-17",
+      "type": "scientific",
+      "status": "inactive",
+      "coordinates": {
+        "longitude": 151.88505668632362,
+        "latitude": 80.33523857789531
+      },
+      "orbitHeight": 19625,
+      "speed": 8.171560259877616,
+      "temperature": {
+        "mainSystem": 25.896917524786687,
+        "communication": -5.383847472569215,
+        "powerUnit": 27.85040716122193
+      },
+      "batteryLevel": 15,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
+    },
+    {
+      "id": "SAT018",
+      "name": "Спутник-18",
+      "type": "navigation",
+      "status": "maintenance",
+      "coordinates": {
+        "longitude": 58.47800122676762,
+        "latitude": 87.03027280875747
+      },
+      "orbitHeight": 12548,
+      "speed": 8.375247343962066,
+      "temperature": {
+        "mainSystem": -43.971381952117795,
+        "communication": -31.996422238413054,
+        "powerUnit": 10.579327309181
+      },
+      "batteryLevel": 31,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
+    },
+    {
+      "id": "SAT019",
+      "name": "Спутник-19",
+      "type": "navigation",
+      "status": "maintenance",
+      "coordinates": {
+        "longitude": 109.59841598284093,
+        "latitude": 82.36918094227286
+      },
+      "orbitHeight": 26694,
+      "speed": 8.02583171948194,
+      "temperature": {
+        "mainSystem": 28.19520134225378,
+        "communication": -36.33945079310615,
+        "powerUnit": -33.36890286995078
+      },
+      "batteryLevel": 64,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
+    },
+    {
+      "id": "SAT020",
+      "name": "Спутник-20",
+      "type": "navigation",
+      "status": "active",
+      "coordinates": {
+        "longitude": 43.32300479709593,
+        "latitude": -39.49879586920398
+      },
+      "orbitHeight": 34226,
+      "speed": 7.071670157319067,
+      "temperature": {
+        "mainSystem": -7.109145769432151,
+        "communication": 17.047466902914294,
+        "powerUnit": -41.829516591946565
+      },
+      "batteryLevel": 78,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
+    },
+    {
+      "id": "SAT021",
+      "name": "Спутник-21",
+      "type": "navigation",
+      "status": "maintenance",
+      "coordinates": {
+        "longitude": 89.42551904244316,
+        "latitude": 63.276324761491075
+      },
+      "orbitHeight": 35872,
+      "speed": 7.356443352821855,
+      "temperature": {
+        "mainSystem": 13.006222437855717,
+        "communication": 24.409747590377457,
+        "powerUnit": -17.926628570716527
+      },
+      "batteryLevel": 30,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
+    },
+    {
+      "id": "SAT022",
+      "name": "Спутник-22",
+      "type": "scientific",
+      "status": "inactive",
+      "coordinates": {
+        "longitude": 54.23885673940967,
+        "latitude": 41.777974908814464
+      },
+      "orbitHeight": 17296,
+      "speed": 6.861237542930874,
+      "temperature": {
+        "mainSystem": 17.13191046788259,
+        "communication": -21.136000487536332,
+        "powerUnit": -46.663174773705904
+      },
+      "batteryLevel": 93,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
+    },
+    {
+      "id": "SAT023",
+      "name": "Спутник-23",
+      "type": "scientific",
+      "status": "maintenance",
+      "coordinates": {
+        "longitude": -83.50144794091096,
+        "latitude": 2.5947892939851016
+      },
+      "orbitHeight": 29690,
+      "speed": 7.261479270804261,
+      "temperature": {
+        "mainSystem": -29.20612421832532,
+        "communication": -20.771538963412265,
+        "powerUnit": -42.18044826648729
+      },
+      "batteryLevel": 5,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
+    },
+    {
+      "id": "SAT024",
+      "name": "Спутник-24",
+      "type": "communication",
+      "status": "inactive",
+      "coordinates": {
+        "longitude": -51.9073796550344,
+        "latitude": 43.79050746390768
+      },
+      "orbitHeight": 8132,
+      "speed": 7.366503205020532,
+      "temperature": {
+        "mainSystem": -29.185955816103444,
+        "communication": -6.630860160984692,
+        "powerUnit": -4.689105435111106
+      },
+      "batteryLevel": 64,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT025",
-      "name": "Навигатор-7",
+      "name": "Спутник-25",
       "type": "navigation",
-      "status": "active",
+      "status": "maintenance",
       "coordinates": {
-        "longitude": 150,
-        "latitude": 40.3
+        "longitude": -131.1383914572308,
+        "latitude": 15.43424940761974
       },
-      "orbitHeight": 20000,
-      "speed": 7.9,
+      "orbitHeight": 26732,
+      "speed": 7.44952693417096,
       "temperature": {
-        "mainSystem": 10,
-        "communication": 14,
-        "powerUnit": 18
+        "mainSystem": -39.65886381997117,
+        "communication": 30.832750551892378,
+        "powerUnit": -28.63537627384798
       },
-      "batteryLevel": 71,
-      "lastUpdate": "10.07.2024 17:45:00"
+      "batteryLevel": 42,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT026",
-      "name": "Спутник-16",
-      "type": "weather",
-      "status": "active",
+      "name": "Спутник-26",
+      "type": "navigation",
+      "status": "inactive",
       "coordinates": {
-        "longitude": 120.2,
-        "latitude": -15.7
+        "longitude": -140.54088834512982,
+        "latitude": 16.38008680066561
       },
-      "orbitHeight": 900,
-      "speed": 7.5,
+      "orbitHeight": 30192,
+      "speed": 7.180625683060756,
       "temperature": {
-        "mainSystem": 24,
-        "communication": 29,
-        "powerUnit": 34
+        "mainSystem": -13.87733934345096,
+        "communication": -3.0074981460090533,
+        "powerUnit": 31.184041282393537
       },
-      "batteryLevel": 73,
-      "lastUpdate": "2024-07-15T08:00:00Z"
+      "batteryLevel": 66,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT027",
-      "name": "Навигатор-8",
+      "name": "Спутник-27",
       "type": "navigation",
-      "status": "maintenance",
+      "status": "active",
       "coordinates": {
-        "longitude": -140,
-        "latitude": 45.6
+        "longitude": -87.63170625818306,
+        "latitude": 40.54876094837804
       },
-      "orbitHeight": 20000,
-      "speed": 7.8,
+      "orbitHeight": 8214,
+      "speed": 7.063147256952158,
       "temperature": {
-        "mainSystem": 14,
-        "communication": 19,
-        "powerUnit": 24
+        "mainSystem": 27.326276985387086,
+        "communication": -25.47007418670905,
+        "powerUnit": -9.296072464270958
       },
-      "batteryLevel": 62,
-      "lastUpdate": "10.07.2024 18:00:00"
+      "batteryLevel": 84,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT028",
-      "name": "Исследователь-7",
-      "type": "scientific",
+      "name": "Спутник-28",
+      "type": "communication",
       "status": "active",
       "coordinates": {
-        "longitude": -60.7,
-        "latitude": 33.2
+        "longitude": -108.10056139565751,
+        "latitude": -38.52477439552264
       },
-      "orbitHeight": 1500,
-      "speed": null,
+      "orbitHeight": 18007,
+      "speed": 6.900901862128197,
       "temperature": {
-        "mainSystem": 12,
-        "communication": 16,
-        "powerUnit": 20
+        "mainSystem": 26.270577943820758,
+        "communication": 35.508072438078884,
+        "powerUnit": 30.29614968549645
       },
-      "batteryLevel": 48,
-      "lastUpdate": "2024-07-15T09:00:00Z"
+      "batteryLevel": 57,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT029",
-      "name": "Спутник-17",
-      "type": "communication",
-      "status": "inactive",
+      "name": "Спутник-29",
+      "type": "navigation",
+      "status": "active",
       "coordinates": {
-        "longitude": 70.8,
-        "latitude": -25.9
+        "longitude": -78.2777835635642,
+        "latitude": 16.953941697694663
       },
-      "orbitHeight": 36000,
-      "speed": null,
+      "orbitHeight": 25770,
+      "speed": 7.4031535117890295,
       "temperature": {
-        "mainSystem": 20,
-        "communication": 24,
-        "powerUnit": 28
+        "mainSystem": -19.49404207271901,
+        "communication": 45.248937968812925,
+        "powerUnit": 1.9569595447789867
       },
-      "batteryLevel": 56,
-      "lastUpdate": "2024-07-15T10:00:00Z"
+      "batteryLevel": 21,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT030",
-      "name": "Навигатор-9",
-      "type": "navigation",
+      "name": "Спутник-30",
+      "type": "communication",
       "status": "active",
       "coordinates": {
-        "longitude": 95.2,
-        "latitude": 10.5
+        "longitude": 50.024228693385844,
+        "latitude": 52.566843309968085
       },
-      "orbitHeight": 20000,
-      "speed": 7.9,
+      "orbitHeight": 11921,
       "temperature": {
-        "mainSystem": 8,
-        "communication": 13,
-        "powerUnit": 18
+        "mainSystem": -34.26859767105596,
+        "communication": 52.48030985002002,
+        "powerUnit": -38.66425969673212
       },
-      "batteryLevel": 68,
-      "lastUpdate": "2024-07-15T11:00:00Z"
+      "batteryLevel": 65,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT031",
-      "name": "Исследователь-8",
+      "name": "Спутник-31",
       "type": "scientific",
-      "status": "maintenance",
+      "status": "inactive",
       "coordinates": {
-        "longitude": -80.5,
-        "latitude": 20.4
+        "longitude": 128.68073391050152,
+        "latitude": 41.797673723408415
       },
-      "orbitHeight": 3000,
-      "speed": 7.7,
+      "orbitHeight": 23330,
+      "speed": 6.843875415708435,
       "temperature": {
-        "mainSystem": 10,
-        "communication": 15,
-        "powerUnit": 20
+        "mainSystem": 8.256197173752662,
+        "communication": 40.90919960856466,
+        "powerUnit": 30.691875337700864
       },
-      "batteryLevel": 58,
-      "lastUpdate": "2024-07-15T12:00:00Z"
+      "batteryLevel": 64,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT032",
-      "name": "Спутник-18",
-      "type": "weather",
-      "status": "active",
+      "name": "Спутник-32",
+      "type": "scientific",
+      "status": "maintenance",
       "coordinates": {
-        "longitude": 130.1,
-        "latitude": -35
+        "longitude": -174.20088492938666,
+        "latitude": -16.442619493654174
       },
-      "orbitHeight": 800,
-      "speed": 7.5,
+      "orbitHeight": 32286,
+      "speed": 7.619136859035574,
       "temperature": {
-        "mainSystem": 16,
-        "communication": 21,
-        "powerUnit": 26
+        "mainSystem": -9.978880052739324,
+        "communication": 20.05143476312224,
+        "powerUnit": 9.30462476934477
       },
-      "batteryLevel": 65,
-      "lastUpdate": "10.07.2024 13:00:00"
+      "batteryLevel": 64,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT033",
-      "name": "Восход-5",
-      "type": "communication",
-      "status": "inactive",
+      "name": "Спутник-33",
+      "type": "scientific",
+      "status": "maintenance",
       "coordinates": {
-        "longitude": -115.2,
-        "latitude": 50.4
+        "longitude": -98.24847066852597,
+        "latitude": -81.55035731136005
       },
-      "orbitHeight": 36000,
-      "speed": null,
+      "orbitHeight": 9050,
+      "speed": 8.340243118014499,
       "temperature": {
-        "mainSystem": 22,
-        "communication": 28,
-        "powerUnit": 34
+        "mainSystem": 13.147903220416236,
+        "communication": -9.254317742992303,
+        "powerUnit": 16.95008104421317
       },
-      "batteryLevel": 59,
-      "lastUpdate": "2024-07-15T14:00:00Z"
+      "batteryLevel": 80,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT034",
-      "name": "Навигатор-10",
+      "name": "Спутник-34",
       "type": "navigation",
       "status": "active",
       "coordinates": {
-        "longitude": 150,
-        "latitude": 70.1
+        "longitude": 168.2153280106459,
+        "latitude": 43.65509651717064
       },
-      "orbitHeight": 20000,
-      "speed": 8,
+      "orbitHeight": 21727,
+      "speed": 8.717519916099794,
       "temperature": {
-        "mainSystem": 5,
-        "communication": 10,
-        "powerUnit": 15
+        "mainSystem": -8.604044812521725,
+        "communication": 1.494637721931647,
+        "powerUnit": -45.28513234228688
       },
-      "batteryLevel": 74,
-      "lastUpdate": "10.07.2024 15:00:00"
+      "batteryLevel": 49,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT035",
-      "name": "Исследователь-9",
-      "type": "scientific",
-      "status": "maintenance",
+      "name": "Спутник-35",
+      "type": "navigation",
+      "status": "active",
       "coordinates": {
-        "longitude": 80.3,
-        "latitude": 30.2
+        "longitude": 130.72401944704586,
+        "latitude": 75.99847901223362
       },
-      "orbitHeight": 1500,
-      "speed": 7.4,
+      "orbitHeight": 4797,
+      "speed": 7.855688034908798,
       "temperature": {
-        "mainSystem": 14,
-        "communication": 18,
-        "powerUnit": 24
+        "mainSystem": -10.771150712211895,
+        "communication": -29.07841610131554,
+        "powerUnit": 45.934040778238
       },
-      "batteryLevel": 68,
-      "lastUpdate": "2024-07-15T16:00:00Z"
+      "batteryLevel": 35,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT036",
-      "name": "Спутник-19",
-      "type": "weather",
-      "status": "active",
+      "name": "Спутник-36",
+      "type": "scientific",
+      "status": "inactive",
       "coordinates": {
-        "longitude": 145.2,
-        "latitude": -20.4
+        "longitude": 48.77991055356415,
+        "latitude": 60.86931103112323
       },
-      "orbitHeight": 850,
-      "speed": 7.6,
+      "orbitHeight": 6109,
       "temperature": {
-        "mainSystem": 19,
-        "communication": 24,
-        "powerUnit": 29
+        "mainSystem": 3.0552240301110896,
+        "communication": -38.2643800678845,
+        "powerUnit": -15.16506516165483
       },
-      "batteryLevel": 70,
-      "lastUpdate": "2024-07-16T08:00:00Z"
+      "batteryLevel": 48,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT037",
-      "name": "Навигатор-11",
-      "type": "navigation",
-      "status": "maintenance",
+      "name": "Спутник-37",
+      "type": "communication",
+      "status": "inactive",
       "coordinates": {
-        "longitude": -150.5,
-        "latitude": 40.3
+        "longitude": -153.2393583430716,
+        "latitude": -54.768545458559345
       },
-      "orbitHeight": 20000,
-      "speed": 7.8,
+      "orbitHeight": 11419,
+      "speed": 7.438665610350314,
       "temperature": {
-        "mainSystem": 14,
-        "communication": 19,
-        "powerUnit": 24
+        "mainSystem": 45.540847079880045,
+        "communication": 40.26675490800389,
+        "powerUnit": 29.488451661618168
       },
-      "batteryLevel": 64,
-      "lastUpdate": "10.07.2024 18:30:00"
+      "batteryLevel": 15,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT038",
-      "name": "Исследователь-10",
-      "type": "scientific",
+      "name": "Спутник-38",
+      "type": "communication",
       "status": "active",
       "coordinates": {
-        "longitude": -70.7,
-        "latitude": 35.2
+        "longitude": 15.91890034626305,
+        "latitude": 64.65034223618126
       },
-      "orbitHeight": 1500,
-      "speed": null,
+      "orbitHeight": 14640,
+      "speed": 7.5086191589534685,
       "temperature": {
-        "mainSystem": 13,
-        "communication": 17,
-        "powerUnit": 21
+        "mainSystem": 0.17116072097128399,
+        "communication": -37.51676126526759,
+        "powerUnit": 6.118845562414416
       },
-      "batteryLevel": 50,
-      "lastUpdate": "2024-07-16T09:00:00Z"
+      "batteryLevel": 37,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT039",
-      "name": "Спутник-20",
+      "name": "Спутник-39",
       "type": "communication",
-      "status": "inactive",
+      "status": "active",
       "coordinates": {
-        "longitude": 75.8,
-        "latitude": -30.9
+        "longitude": -63.62950218752969,
+        "latitude": 95.64272882571771
       },
-      "orbitHeight": 36000,
-      "speed": null,
+      "orbitHeight": 868,
+      "speed": 8.143713577739438,
       "temperature": {
-        "mainSystem": 21,
-        "communication": 26,
-        "powerUnit": 31
+        "mainSystem": -10.985442737735376,
+        "communication": 44.16502682353001,
+        "powerUnit": 10.488152941725211
       },
-      "batteryLevel": 55,
-      "lastUpdate": "2024-07-16T10:00:00Z"
+      "batteryLevel": 33,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT040",
-      "name": "Навигатор-12",
-      "type": "navigation",
-      "status": "active",
+      "name": "Спутник-40",
+      "type": "communication",
+      "status": "maintenance",
       "coordinates": {
-        "longitude": 100.2,
-        "latitude": 12.5
+        "longitude": -146.52644231520608,
+        "latitude": -6.44633497364964
       },
-      "orbitHeight": 20000,
-      "speed": 7.9,
+      "orbitHeight": 5330,
+      "speed": 7.187472093070574,
       "temperature": {
-        "mainSystem": 7,
-        "communication": 12,
-        "powerUnit": 17
+        "mainSystem": 3.8018856957412703,
+        "communication": -20.067181207033265,
+        "powerUnit": -48.34827918618797
       },
-      "batteryLevel": 66,
-      "lastUpdate": "2024-07-16T11:00:00Z"
+      "batteryLevel": 65,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT041",
-      "name": "Исследователь-11",
-      "type": "scientific",
-      "status": "maintenance",
+      "name": "Спутник-41",
+      "type": "communication",
+      "status": "active",
       "coordinates": {
-        "longitude": -85.5,
-        "latitude": 25.4
+        "longitude": 31.673669004757073,
+        "latitude": -10.72302322322485
       },
-      "orbitHeight": 3000,
-      "speed": 7.7,
+      "orbitHeight": 33455,
       "temperature": {
-        "mainSystem": 11,
-        "communication": 15,
-        "powerUnit": 19
+        "mainSystem": -15.17537540191023,
+        "communication": -23.891723765086812,
+        "powerUnit": 34.76594499287655
       },
-      "batteryLevel": 59,
-      "lastUpdate": "2024-07-16T12:00:00Z"
+      "batteryLevel": 95,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT042",
-      "name": "Спутник-21",
-      "type": "weather",
+      "name": "Спутник-42",
+      "type": "scientific",
       "status": "active",
       "coordinates": {
-        "longitude": 125.1,
-        "latitude": -40
+        "longitude": -31.371821492092458,
+        "latitude": -20.560057473650257
       },
-      "orbitHeight": 750,
-      "speed": 7.5,
+      "orbitHeight": 21981,
+      "speed": 7.174205926430446,
       "temperature": {
-        "mainSystem": 17,
-        "communication": 22,
-        "powerUnit": 27
+        "mainSystem": -30.562911938709682,
+        "communication": -42.248856950816496,
+        "powerUnit": 37.0345951472496
       },
-      "batteryLevel": 67,
-      "lastUpdate": "10.07.2024 13:30:00"
+      "batteryLevel": 96,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT043",
-      "name": "Восход-6",
-      "type": "communication",
+      "name": "Спутник-43",
+      "type": "navigation",
       "status": "inactive",
       "coordinates": {
-        "longitude": -125.2,
-        "latitude": 55.4
+        "longitude": 126.76341907774538,
+        "latitude": 32.93789265854962
       },
-      "orbitHeight": 36000,
-      "speed": null,
+      "orbitHeight": 4419,
+      "speed": 7.555867737724391,
       "temperature": {
-        "mainSystem": 23,
-        "communication": 29,
-        "powerUnit": 35
+        "mainSystem": 18.155430049712205,
+        "communication": -52.93702048459648,
+        "powerUnit": 43.41985743770963
       },
-      "batteryLevel": 58,
-      "lastUpdate": "2024-07-16T14:00:00Z"
+      "batteryLevel": 28,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT044",
-      "name": "Навигатор-13",
+      "name": "Спутник-44",
       "type": "navigation",
       "status": "active",
       "coordinates": {
-        "longitude": 155,
-        "latitude": 75.1
+        "longitude": 73.67255944922144,
+        "latitude": 53.546516296865846
       },
-      "orbitHeight": 20000,
-      "speed": 8,
+      "orbitHeight": 12200,
+      "speed": 8.086717530466174,
       "temperature": {
-        "mainSystem": 6,
-        "communication": 11,
-        "powerUnit": 16
+        "mainSystem": 34.033539733718456,
+        "communication": 46.947723970575105,
+        "powerUnit": -40.81741755200524
       },
-      "batteryLevel": 72,
-      "lastUpdate": "10.07.2024 15:30:00"
+      "batteryLevel": 38,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT045",
-      "name": "Исследователь-12",
-      "type": "scientific",
+      "name": "Спутник-45",
+      "type": "navigation",
       "status": "maintenance",
       "coordinates": {
-        "longitude": 90.3,
-        "latitude": 35.2
+        "longitude": -43.93065701143128,
+        "latitude": 44.137779824678326
       },
-      "orbitHeight": 1500,
-      "speed": 7.3,
+      "orbitHeight": 13651,
+      "speed": 7.018068761119716,
       "temperature": {
-        "mainSystem": 15,
-        "communication": 19,
-        "powerUnit": 23
+        "mainSystem": -11.064818564955576,
+        "communication": -23.769934091834905,
+        "powerUnit": -18.303134022095673
       },
-      "batteryLevel": 69,
-      "lastUpdate": "2024-07-16T16:00:00Z"
+      "batteryLevel": 75,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT046",
-      "name": "Спутник-22",
-      "type": "weather",
-      "status": "active",
-      "coordinates": {
-        "longitude": 115.5,
-        "latitude": -18.3
-      },
-      "orbitHeight": 900,
-      "speed": 7.7,
-      "temperature": {
-        "mainSystem": 20,
-        "communication": 25,
-        "powerUnit": 30
-      },
-      "batteryLevel": 74,
-      "lastUpdate": "2024-07-17T08:00:00Z"
-    },
-    {
-      "id": "SAT047",
-      "name": "Навигатор-14",
+      "name": "Спутник-46",
       "type": "navigation",
       "status": "maintenance",
       "coordinates": {
-        "longitude": -125.4,
-        "latitude": 48.3
+        "longitude": 178.82984504861568,
+        "latitude": 25.90331111618054
       },
-      "orbitHeight": 20000,
-      "speed": 7.8,
+      "orbitHeight": 14105,
+      "speed": 7.077904532008032,
       "temperature": {
-        "mainSystem": 15,
-        "communication": 20,
-        "powerUnit": 25
+        "mainSystem": 18.857112717020183,
+        "communication": 48.728683465087684,
+        "powerUnit": -13.787414203269973
       },
-      "batteryLevel": 63,
-      "lastUpdate": "10.07.2024 18:30:00"
+      "batteryLevel": 72,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
-      "id": "SAT048",
-      "name": "Исследователь-13",
-      "type": "scientific",
-      "status": "active",
-      "coordinates": {
-        "longitude": -65.7,
-        "latitude": 32.2
-      },
-      "orbitHeight": 1500,
-      "speed": null,
-      "temperature": {
-        "mainSystem": 13,
-        "communication": 17,
-        "powerUnit": 22
-      },
-      "batteryLevel": 52,
-      "lastUpdate": "2024-07-17T09:00:00Z"
-    },
-    {
-      "id": "SAT049",
-      "name": "Спутник-23",
+      "id": "SAT047",
+      "name": "Спутник-47",
       "type": "communication",
       "status": "inactive",
       "coordinates": {
-        "longitude": 68.8,
-        "latitude": -28.9
+        "longitude": 1.296973492642612,
+        "latitude": -22.606227775810208
       },
-      "orbitHeight": 36000,
-      "speed": null,
+      "orbitHeight": 32584,
+      "speed": 7.907473754889184,
       "temperature": {
-        "mainSystem": 22,
-        "communication": 27,
-        "powerUnit": 32
+        "mainSystem": -23.76909737529598,
+        "communication": -8.17806478722962,
+        "powerUnit": 18.044891974344115
       },
-      "batteryLevel": 53,
-      "lastUpdate": "2024-07-17T10:00:00Z"
+      "batteryLevel": 41,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
+    },
+    {
+      "id": "SAT048",
+      "name": "Спутник-48",
+      "type": "navigation",
+      "status": "maintenance",
+      "coordinates": {
+        "longitude": -135.50367328766856,
+        "latitude": -78.55144649725301
+      },
+      "orbitHeight": 530,
+      "speed": 8.282932474727511,
+      "temperature": {
+        "mainSystem": -40.61011052408241,
+        "communication": -20.820160090228885,
+        "powerUnit": 10.323897915754156
+      },
+      "batteryLevel": 99,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
+    },
+    {
+      "id": "SAT049",
+      "name": "Спутник-49",
+      "type": "scientific",
+      "status": "active",
+      "coordinates": {
+        "longitude": -42.26120526013379,
+        "latitude": -45.3278894106563
+      },
+      "orbitHeight": 33917,
+      "speed": 7.636480735993322,
+      "temperature": {
+        "mainSystem": -24.27397151293067,
+        "communication": -42.91302554262848,
+        "powerUnit": 54.233438197503695
+      },
+      "batteryLevel": 11,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     },
     {
       "id": "SAT050",
-      "name": "Навигатор-15",
+      "name": "Спутник-50",
       "type": "navigation",
-      "status": "active",
+      "status": "maintenance",
       "coordinates": {
-        "longitude": 90.2,
-        "latitude": 15.5
+        "longitude": -94.34639247521794,
+        "latitude": 91.19559833714541
       },
-      "orbitHeight": 20000,
-      "speed": 7.9,
+      "orbitHeight": 4731,
+      "speed": 7.792338906470524,
       "temperature": {
-        "mainSystem": 8,
-        "communication": 13,
-        "powerUnit": 18
+        "mainSystem": -11.985546521446281,
+        "communication": 31.572757493974215,
+        "powerUnit": -43.65894089066724
       },
-      "batteryLevel": 67,
-      "lastUpdate": "2024-07-17T11:00:00Z"
+      "batteryLevel": 60,
+      "lastUpdate": "2024-11-03T21:18:09.482Z"
     }
   ]
 }

@@ -1,10 +1,14 @@
-//src\components\MapView\MapView.tsx
+// src/components/MapView/MapView.tsx
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { useGetSatellitesQuery } from '../../services/satellitesApi';
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
 import { useNavigate } from 'react-router-dom';
+import L from 'leaflet';
+import { useGetSatellitesQuery } from '../../services/satellitesApi';
+import './MapView.css';
+import communicationIcon from '../../assets/communication-icon.png';
+import navigationIcon from '../../assets/navigation-icon.png';
+import scientificIcon from '../../assets/scientific-icon.png';
+import defaultIcon from '../../assets/default-icon.png';
 
 const SatelliteIcon = (type: string) => {
   let iconUrl = '';
