@@ -1,29 +1,30 @@
+// src/slices/satellitesSlice.ts
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Satellite } from '../services/satellitesApi';
+import { Satellite } from '../types/satellite';
 
 interface SatellitesState {
-  selectedSatelliteId: string | null;
-  // Добавьте другие поля состояния по необходимости
+  satellites: Satellite[];
 }
 
 const initialState: SatellitesState = {
-  selectedSatelliteId: null,
+  satellites: [],
 };
 
 const satellitesSlice = createSlice({
   name: 'satellites',
   initialState,
   reducers: {
-    selectSatellite(state, action: PayloadAction<string>) {
-      state.selectedSatelliteId = action.payload;
+    setSatellites(state, action: PayloadAction<Satellite[]>) {
+      state.satellites = action.payload;
     },
-    deselectSatellite(state) {
-      state.selectedSatelliteId = null;
+    updateSatellite(state, action: PayloadAction<Satellite>) {
+      const index = state.satellites.findIndex(sat => sat.id === action.payload.id);
+      if (index !== -1) {
+        state.satellites[index] = action.payload;
+      }
     },
-    // Добавьте другие редюсеры по необходимости
   },
 });
 
-export const { selectSatellite, deselectSatellite } = satellitesSlice.actions;
-
+export const { setSatellites, updateSatellite } = satellitesSlice.actions;
 export default satellitesSlice.reducer;
