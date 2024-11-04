@@ -1,8 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SatelliteListPage from './pages/SatelliteList/SatelliteList';
-import SatelliteStatus from './components/SatelliteStatus/SatelliteStatus';
-import SatelliteMap from './components/SatelliteMap/SatelliteMap';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';

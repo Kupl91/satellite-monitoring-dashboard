@@ -91,11 +91,11 @@ const SatelliteList: React.FC = React.memo(() => {
         filterStatus={filterStatus}
         setFilterStatus={setFilterStatus}
       />
-      <AutoSizer>
+      <AutoSizer >
         {({ height, width }) => (
           <List
             width={width}
-            height={height}
+            height={800}
             rowCount={sortedSatellites.length}
             rowHeight={50}
             rowRenderer={rowRenderer}
