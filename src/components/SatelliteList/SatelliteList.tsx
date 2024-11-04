@@ -17,7 +17,7 @@ const SatelliteList: React.FC = React.memo(() => {
       if (satellites) {
         randomizeSatelliteData(satellites, updateSatellite);
       }
-    }, 30000); // 30 секунд
+    }, 30000); 
 
     return () => clearInterval(interval);
   }, [satellites, updateSatellite]);

@@ -28,7 +28,7 @@ const generateMockTemperatureData = (): TemperatureData[] => {
     const time = new Date(now.getTime() - i * 60 * 60 * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     data.push({
       time,
-      mainSystem: Math.floor(Math.random() * 100) - 50, // -50°C to +50°C
+      mainSystem: Math.floor(Math.random() * 100) - 50, 
       communication: Math.floor(Math.random() * 100) - 50,
       powerUnit: Math.floor(Math.random() * 100) - 50,
     });
@@ -43,7 +43,7 @@ const generateMockBatteryData = (): BatteryData[] => {
     const time = new Date(now.getTime() - i * 60 * 60 * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     data.push({
       time,
-      batteryLevel: Math.floor(Math.random() * 101), // 0% to 100%
+      batteryLevel: Math.floor(Math.random() * 101), 
     });
   }
   return data;
@@ -54,11 +54,9 @@ const SatelliteDetails: React.FC<SatelliteDetailsProps> = ({ satellite }) => {
   const [batteryData, setBatteryData] = useState<BatteryData[]>([]);
 
   useEffect(() => {
-    // Генерация фиктивных данных
     setTemperatureData(generateMockTemperatureData());
     setBatteryData(generateMockBatteryData());
 
-    // В реальном приложении здесь должен быть запрос к API для получения исторических данных
   }, [satellite.id]);
 
   return (

@@ -1,6 +1,6 @@
 // src/components/MapView/MapView.tsx
 import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, Tooltip } from 'react-leaflet';
 import { useNavigate } from 'react-router-dom';
 import L from 'leaflet';
 import { useGetSatellitesQuery } from '../../services/satellitesApi';
@@ -10,6 +10,7 @@ import navigationIcon from '../../assets/navigation-icon.png';
 import scientificIcon from '../../assets/scientific-icon.png';
 import defaultIcon from '../../assets/default-icon.png';
 
+// Определение иконок для разных типов спутников
 const icons = {
   communication: L.icon({
     iconUrl: communicationIcon,
@@ -44,14 +45,15 @@ const MapView: React.FC = () => {
   if (isLoading) return <div>Загрузка карты...</div>;
   if (error) return <div>Ошибка при загрузке карты.</div>;
 
+  // Функция обработки клика на маркер для навигации к деталям спутника
   const handleMarkerClick = (id: string) => {
     navigate(`/satellite/${id}`);
   };
 
-  // Определяем границы карты (юго-западный и северо-восточный углы)
+  // Ограничения по границам карты
   const bounds: L.LatLngBoundsExpression = [
-    [-90, -180], // Юго-запад
-    [90, 180],   // Северо-восток
+    [-90, -180],
+    [90, 180],
   ];
 
   return (
@@ -59,19 +61,18 @@ const MapView: React.FC = () => {
       center={[0, 0]}
       zoom={2}
       className="map-view"
-      minZoom={2} // Ограничение минимального зума
-      maxZoom={18} // Максимальный зум
-      maxBounds={bounds} // Ограничение области просмотра
-      maxBoundsViscosity={1.0} // Полная фиксация карты внутри границ
-      scrollWheelZoom={true} // Разрешение масштабирования колесиком мыши
-      dragging={true} // Разрешение перетаскивания карты
-      // Дополнительные настройки можно добавить здесь
+      minZoom={2}
+      maxZoom={18}
+      maxBounds={bounds}
+      maxBoundsViscosity={1.0}
+      scrollWheelZoom={true}
+      dragging={true}
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="&copy; OpenStreetMap contributors"
       />
-      {satellites?.map((sat) => (
+      {satellites?.map((sat) =>
         sat.coordinates.latitude && sat.coordinates.longitude ? (
           <Marker
             key={sat.id}
@@ -81,14 +82,30 @@ const MapView: React.FC = () => {
               click: () => handleMarkerClick(sat.id),
             }}
           >
+            {/* Popup при клике на маркер */}
             <Popup>
-              <strong>{sat.name}</strong><br />
-              Тип: {sat.type}<br />
+              <strong>{sat.name}</strong>
+              <br />
+              Тип: {sat.type}
+              <br />
               Статус: {sat.status}
+              <br />
+              <button onClick={() => handleMarkerClick(sat.id)}>Подробнее</button>
             </Popup>
+
+            {/* Tooltip при наведении на маркер */}
+            <Tooltip direction="top" offset={[0, -10]} opacity={1} permanent={false}>
+              <div>
+                <strong>{sat.name}</strong>
+                <br />
+                Тип: {sat.type}
+                <br />
+                Статус: {sat.status}
+              </div>
+            </Tooltip>
           </Marker>
         ) : null
-      ))}
+      )}
     </MapContainer>
   );
 };
