@@ -1,4 +1,3 @@
-// src/components/MapView/MapView.tsx
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Tooltip } from 'react-leaflet';
 import { useNavigate } from 'react-router-dom';
@@ -9,8 +8,9 @@ import communicationIcon from '../../assets/communication-icon.png';
 import navigationIcon from '../../assets/navigation-icon.png';
 import scientificIcon from '../../assets/scientific-icon.png';
 import defaultIcon from '../../assets/default-icon.png';
+import Loader from '../common/Loader';
+import ErrorMessage from '../common/ErrorMessage';
 
-// Определение иконок для разных типов спутников
 const icons = {
   communication: L.icon({
     iconUrl: communicationIcon,
@@ -42,15 +42,13 @@ const MapView: React.FC = () => {
   const { data: satellites, error, isLoading } = useGetSatellitesQuery();
   const navigate = useNavigate();
 
-  if (isLoading) return <div>Загрузка карты...</div>;
-  if (error) return <div>Ошибка при загрузке карты.</div>;
+  if (isLoading) return <Loader message="Загрузка карты..." />;
+  if (error) return <ErrorMessage message="Ошибка при загрузке карты." />;
 
-  // Функция обработки клика на маркер для навигации к деталям спутника
   const handleMarkerClick = (id: string) => {
     navigate(`/satellite/${id}`);
   };
 
-  // Ограничения по границам карты
   const bounds: L.LatLngBoundsExpression = [
     [-90, -180],
     [90, 180],
@@ -82,7 +80,6 @@ const MapView: React.FC = () => {
               click: () => handleMarkerClick(sat.id),
             }}
           >
-            {/* Popup при клике на маркер */}
             <Popup>
               <strong>{sat.name}</strong>
               <br />
@@ -92,8 +89,6 @@ const MapView: React.FC = () => {
               <br />
               <button onClick={() => handleMarkerClick(sat.id)}>Подробнее</button>
             </Popup>
-
-            {/* Tooltip при наведении на маркер */}
             <Tooltip direction="top" offset={[0, -10]} opacity={1} permanent={false}>
               <div>
                 <strong>{sat.name}</strong>

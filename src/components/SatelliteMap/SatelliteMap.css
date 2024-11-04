@@ -1,3 +1,8 @@
 .satellite-map {
   margin: 20px 0;
 }
+
+.satellite-map h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}

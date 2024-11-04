@@ -1,0 +1,13 @@
+.temperature-display {
+    margin-top: 20px;
+  }
+  
+  .temperature-display ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .temperature-display li {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }

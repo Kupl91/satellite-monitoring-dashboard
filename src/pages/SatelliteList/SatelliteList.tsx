@@ -8,11 +8,11 @@ import './SatelliteList.css';
 const SatelliteListPage: React.FC = () => {
   return (
     <div className="satellite-list-page">
-    <SatelliteStatus />
-    <SatelliteMap />
-    <SatelliteList />
-  </div>
-);
+      <SatelliteStatus />
+      <SatelliteMap />
+      <SatelliteList />
+    </div>
+  );
 };
 
 export default SatelliteListPage;

@@ -1,6 +1,5 @@
-// src/App.tsx
 import React, { Suspense, lazy } from 'react';
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SatelliteListPage from './pages/SatelliteList/SatelliteList';
 import SatelliteStatus from './components/SatelliteStatus/SatelliteStatus';
 import SatelliteMap from './components/SatelliteMap/SatelliteMap';

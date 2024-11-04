@@ -4,10 +4,8 @@ import { useGetSatellitesQuery, randomizeSatelliteData, useUpdateSatelliteMutati
 import { List, AutoSizer, ListRowProps } from 'react-virtualized';
 import './SatelliteList.css';
 import { useNavigate } from 'react-router-dom';
-
-type SortBy = 'name' | 'type' | 'status' | 'orbitHeight';
-type FilterType = 'all' | 'communication' | 'navigation' | 'scientific';
-type FilterStatus = 'all' | 'active' | 'inactive' | 'maintenance';
+import FiltersAndSortControls from './Filters/FiltersAndSortControls';
+import { SortBy, FilterType, FilterStatus } from '../../types/satellite';
 
 const SatelliteList: React.FC = React.memo(() => {
   const { data: satellites, error, isLoading } = useGetSatellitesQuery();
@@ -85,56 +83,25 @@ const SatelliteList: React.FC = React.memo(() => {
 
   return (
     <div>
-      <div className="controls">
-        <label>
-          Сортировать по:
-          <select value={sortBy} onChange={(e) => setSortBy(e.target.value as SortBy)}>
-            <option value="name">Имя</option>
-            <option value="type">Тип</option>
-            <option value="status">Статус</option>
-            <option value="orbitHeight">Высота орбиты</option>
-          </select>
-        </label>
-        <label>
-          Фильтр по типу:
-          <select value={filterType} onChange={(e) => setFilterType(e.target.value as FilterType)}>
-            <option value="all">Все</option>
-            <option value="communication">Коммуникации</option>
-            <option value="navigation">Навигация</option>
-            <option value="scientific">Научные</option>
-          </select>
-        </label>
-        <label>
-          Фильтр по статусу:
-          <select value={filterStatus} onChange={(e) => setFilterStatus(e.target.value as FilterStatus)}>
-            <option value="all">Все</option>
-            <option value="active">Активные</option>
-            <option value="inactive">Неактивные</option>
-            <option value="maintenance">На обслуживании</option>
-          </select>
-        </label>
-      </div>
-      <div className="table-header">
-        <div className="header-cell">Имя</div>
-        <div className="header-cell">Тип</div>
-        <div className="header-cell">Статус</div>
-        <div className="header-cell">Высота орбиты</div>
-      </div>
-      <div style={{ height: '600px' }}>
-        <AutoSizer>
-          {({ height, width }) => (
-            <List
-              width={width}
-              height={height}
-              rowCount={sortedSatellites.length}
-              rowHeight={50} // Высота строки
-              rowRenderer={rowRenderer}
-              overscanRowCount={10}
-              className="satellite-list"
-            />
-          )}
-        </AutoSizer>
-      </div>
+      <FiltersAndSortControls
+        sortBy={sortBy}
+        setSortBy={setSortBy}
+        filterType={filterType}
+        setFilterType={setFilterType}
+        filterStatus={filterStatus}
+        setFilterStatus={setFilterStatus}
+      />
+      <AutoSizer>
+        {({ height, width }) => (
+          <List
+            width={width}
+            height={height}
+            rowCount={sortedSatellites.length}
+            rowHeight={50}
+            rowRenderer={rowRenderer}
+          />
+        )}
+      </AutoSizer>
     </div>
   );
 });
