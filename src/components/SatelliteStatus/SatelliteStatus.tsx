@@ -1,3 +1,4 @@
+// src\components\SatelliteStatus\SatelliteStatus.tsx
 import React from 'react';
 import { useGetSatellitesStatusQuery } from '../../services/satellitesApi';
 import './SatelliteStatus.css';
