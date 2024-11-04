@@ -1,17 +1,43 @@
-// src\components\SatelliteStatus\SatelliteStatus.tsx
-import React from 'react';
-import { useGetSatellitesStatusQuery } from '../../services/satellitesApi';
+// src/components/SatelliteStatus/SatelliteStatus.tsx
+import React, { useEffect, useMemo } from 'react';
+import { useGetSatellitesQuery } from '../../services/satellitesApi';
 import './SatelliteStatus.css';
 import { toast } from 'react-toastify';
+import { Satellite } from '../../types/satellite';
 
 const SatelliteStatus: React.FC = () => {
-  const { data: status, error, isLoading, refetch } = useGetSatellitesStatusQuery();
+  const { data: satellites, error, isLoading, refetch } = useGetSatellitesQuery();
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (error) {
       toast.error('Не удалось загрузить статус спутников. Попробуйте позже.');
+      console.error(error);
     }
   }, [error]);
+
+  const status = useMemo(() => {
+    if (!satellites) return { active: 0, inactive: 0, maintenance: 0 };
+
+    return satellites.reduce(
+      (acc, sat: Satellite) => {
+        switch (sat.status) {
+          case 'active':
+            acc.active += 1;
+            break;
+          case 'inactive':
+            acc.inactive += 1;
+            break;
+          case 'maintenance':
+            acc.maintenance += 1;
+            break;
+          default:
+            break;
+        }
+        return acc;
+      },
+      { active: 0, inactive: 0, maintenance: 0 }
+    );
+  }, [satellites]);
 
   return (
     <div className="satellite-status">
@@ -23,7 +49,7 @@ const SatelliteStatus: React.FC = () => {
           <button onClick={() => refetch()}>Повторить попытку</button>
         </div>
       )}
-      {status && (
+      {satellites && (
         <ul>
           <li>Активные: {status.active}</li>
           <li>Неактивные: {status.inactive}</li>
