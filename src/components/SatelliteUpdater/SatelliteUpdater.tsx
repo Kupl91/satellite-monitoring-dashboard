@@ -1,13 +1,9 @@
 // src/components/SatelliteUpdater/SatelliteUpdater.tsx
 import React from 'react';
 import { useUpdateSatelliteMutation } from '../../services/satellitesApi';
-import { Satellite } from '../../types/satellite';
+import { Satellite, SatelliteUpdaterProps } from '../../types/satellite';
 import { toast } from 'react-toastify';
 
-
-interface SatelliteUpdaterProps {
-  satellite: Satellite;
-}
 
 const SatelliteUpdater: React.FC<SatelliteUpdaterProps> = ({ satellite }) => {
   const [updateSatellite, { isLoading }] = useUpdateSatelliteMutation();

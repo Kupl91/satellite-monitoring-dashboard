@@ -1,6 +1,6 @@
 //src\components\SatelliteList\Filters\FilterType.tsx
 import React from 'react';
-import './FilterType.css';
+import './FiltersAndSortControls.css';
 
 interface FilterTypeProps {
   filterType: string;

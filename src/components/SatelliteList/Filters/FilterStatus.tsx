@@ -1,6 +1,7 @@
 //src\components\SatelliteList\Filters\FilterStatus.tsx
 import React from 'react';
 import './FilterStatus.css';
+import './FiltersAndSortControls.css';
 
 interface FilterStatusProps {
   filterStatus: string;

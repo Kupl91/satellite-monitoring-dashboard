@@ -1,6 +1,6 @@
-//src\components\SatelliteList\Filters\SortControls.tsx
+
 import React from 'react';
-import './SortControls.css';
+import './FiltersAndSortControls.css';
 
 interface SortControlsProps {
   sortBy: string;

@@ -5,22 +5,7 @@ import {
 } from 'recharts';
 import { formatDate } from '../../../utils/formatDate';
 import './SatelliteCharts.css';
-
-interface TemperatureData {
-  time: string;
-  mainSystem: number;
-  communication: number;
-  powerUnit: number;
-}
-
-interface BatteryData {
-  time: string;
-  batteryLevel: number;
-}
-
-interface SatelliteChartsProps {
-  satelliteId: string;
-}
+import { BatteryData, SatelliteChartsProps, TemperatureData } from '../../../types/satellite';
 
 const generateMockTemperatureData = (): TemperatureData[] => {
   const data: TemperatureData[] = [];

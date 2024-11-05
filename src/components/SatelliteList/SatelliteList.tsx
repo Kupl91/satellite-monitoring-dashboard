@@ -24,13 +24,11 @@ const SatelliteList: React.FC = () => {
   if (error) return <ErrorMessage message="Ошибка при загрузке спутников." />;
   if (!satellites) return <p>Спутники не найдены.</p>;
 
-   // Фильтрация и сортировка  
     const filteredSatellites= satellites.filter((sat)=>{
         let typeMatch= filterType==='all' || sat.type===filterType ;
         let statusMatch= filterStatus==='all' || sat.status===filterStatus;
        return typeMatch && statusMatch;});
 
-      // Сортировка 
       const sortedSatellites =
      [...filteredSatellites].sort((a,b)=>{
          if(sortBy==='orbitHeight'){
@@ -43,11 +41,9 @@ const SatelliteList: React.FC = () => {
            }
             return 0; })
 
-      // Определяем высоту строки и общее количество элементов для виртуализации
-      const rowHeight = 40; // Установите желаемую высоту строки
+      const rowHeight = 40; 
       const itemCount=sortedSatellites.length;
 
-      // Рендеринг элемента списка для react-window с указанием типов
     const RowRenderer :React.FC<{ index:number; style:React.CSSProperties }> =(props) =>{
    const satellite= sortedSatellites[props.index];
    return (
@@ -59,7 +55,6 @@ const SatelliteList: React.FC = () => {
 
 return (
   <div className ="satellite-list">
-     {/* Компоненты фильтрации и сортировки */}
     <FiltersAndSortControls
        sortBy={sortBy}
        setSortBy={setSortBy}
@@ -67,9 +62,7 @@ return (
        setFilterType ={setFilterType}
         filterStatus ={filterStatus}
         setFilterStatus ={setFilterStatus}/>
-   {/* Использование Virtualized List */}
      <List height ={400} itemCount ={itemCount} itemSize ={rowHeight}>
-                 {/* Передаем RowRenderer как дочерний элемент */}
                 {(rowProps: JSX.IntrinsicAttributes & { index: number; style: React.CSSProperties; }) => <RowRenderer {...rowProps} />}
             </List>
         </div >

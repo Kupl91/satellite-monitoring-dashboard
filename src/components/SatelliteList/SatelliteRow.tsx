@@ -1,14 +1,10 @@
 // src/components/SatelliteList/SatelliteRow.tsx
 import React from 'react';
-import { Satellite } from '../../types/satellite';
+import { Satellite, SatelliteRowProps } from '../../types/satellite';
 import './SatelliteRow.css';
 import StatusIndicator from '../common/StatusIndicator';
 
-interface SatelliteRowProps {
-  satellite: Satellite;
-  onClick: () => void;
-  style: React.CSSProperties;
-}
+
 
 const SatelliteRow: React.FC<SatelliteRowProps> = ({ satellite, onClick, style }) => (
   <div

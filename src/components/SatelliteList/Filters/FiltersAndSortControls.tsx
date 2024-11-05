@@ -1,16 +1,7 @@
-// src/components/SatelliteList/FiltersAndSortControls.tsx
+// НАЧНИ ГОТОВИТЬ РАЗБИВКУ НА 3 ЧАСТИ
 import React from 'react';
-import { SortBy, FilterType, FilterStatus } from '../../../types/satellite';
+import { SortBy, FilterType, FilterStatus, FiltersAndSortControlsProps } from '../../../types/satellite';
 import './FiltersAndSortControls.css';
-
-interface FiltersAndSortControlsProps {
-  sortBy: SortBy;
-  setSortBy: (value: SortBy) => void;
-  filterType: FilterType;
-  setFilterType: (value: FilterType) => void;
-  filterStatus: FilterStatus;
-  setFilterStatus: (value: FilterStatus) => void;
-}
 
 const FiltersAndSortControls: React.FC<FiltersAndSortControlsProps> = ({
   sortBy,

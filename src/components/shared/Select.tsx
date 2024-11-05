@@ -1,10 +1,8 @@
 // src/components/shared/Select.tsx
 import React from 'react';
 import './Select.css';
+import { SelectProps } from '../../types/satellite';
 
-interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
-  options: { value: string; label: string }[];
-}
 
 const Select: React.FC<SelectProps> = ({ options, ...props }) => (
   <select className="shared-select" {...props} aria-label={props['aria-label'] || 'Выбор'}>

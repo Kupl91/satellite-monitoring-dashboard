@@ -1,10 +1,8 @@
 import React from 'react';
-import { Temperature } from '../../types/satellite';
+import {TemperatureDisplayProps } from '../../types/satellite';
 import './TemperatureDisplay.css';
 
-interface TemperatureDisplayProps {
-  temperature?: Temperature;
-}
+
 
 const TemperatureDisplay: React.FC<TemperatureDisplayProps> = ({ temperature }) => {
   if (!temperature) return null;
