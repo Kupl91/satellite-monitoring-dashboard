@@ -1,13 +1,19 @@
-.button {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
+.shared-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.shared-button:hover,
+.shared-button:focus {
+  background-color: #0056b3;
+}
+
+.shared-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}

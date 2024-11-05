@@ -65,6 +65,7 @@ const MapView: React.FC = () => {
       maxBoundsViscosity={1.0}
       scrollWheelZoom={true}
       dragging={true}
+      aria-label="Карта спутников"
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -87,7 +88,9 @@ const MapView: React.FC = () => {
               <br />
               Статус: {sat.status}
               <br />
-              <button onClick={() => handleMarkerClick(sat.id)}>Подробнее</button>
+              <button onClick={() => handleMarkerClick(sat.id)} aria-label={`Подробнее о спутнике ${sat.name}`}>
+                Подробнее
+              </button>
             </Popup>
             <Tooltip direction="top" offset={[0, -10]} opacity={1} permanent={false}>
               <div>

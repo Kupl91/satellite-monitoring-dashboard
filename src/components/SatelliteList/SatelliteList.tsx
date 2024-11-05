@@ -1,88 +1,48 @@
 // src/components/SatelliteList/SatelliteList.tsx
-import React, { useEffect, useMemo, useState, useCallback } from 'react';
-import { useGetSatellitesQuery, randomizeSatelliteData, useUpdateSatelliteMutation } from '../../services/satellitesApi';
-import { List, AutoSizer, ListRowProps } from 'react-virtualized';
-import './SatelliteList.css';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useGetSatellitesQuery } from '../../services/satellitesApi';
+import SatelliteRow from './SatelliteRow';
+import Loader from '../common/Loader';
+import ErrorMessage from '../common/ErrorMessage';
 import FiltersAndSortControls from './Filters/FiltersAndSortControls';
+import useRandomizeSatelliteDataHook from '../../hooks/useRandomizeSatelliteData';
 import { SortBy, FilterType, FilterStatus } from '../../types/satellite';
+import './SatelliteList.css';
 
-const SatelliteList: React.FC = React.memo(() => {
+const SatelliteList: React.FC = () => {
   const { data: satellites, error, isLoading } = useGetSatellitesQuery();
-  const [updateSatellite] = useUpdateSatelliteMutation();
-  const navigate = useNavigate();
+  useRandomizeSatelliteDataHook(satellites);
 
   const [sortBy, setSortBy] = useState<SortBy>('name');
   const [filterType, setFilterType] = useState<FilterType>('all');
   const [filterStatus, setFilterStatus] = useState<FilterStatus>('all');
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (satellites) {
-        randomizeSatelliteData(satellites, updateSatellite);
-      }
-    }, 30000); // Обновление каждые 30 секунд
+  if (isLoading) return <Loader message="Загрузка списка спутников..." />;
+  if (error) return <ErrorMessage message="Ошибка при загрузке спутников." />;
+  if (!satellites) return <p>Спутники не найдены.</p>;
 
-    return () => clearInterval(interval);
-  }, [satellites, updateSatellite]);
+  // Фильтрация спутников
+  const filteredSatellites = satellites.filter((sat) => {
+    const typeMatch = filterType === 'all' || sat.type === filterType;
+    const statusMatch = filterStatus === 'all' || sat.status === filterStatus;
+    return typeMatch && statusMatch;
+  });
 
-  const filteredSatellites = useMemo(() => {
-    return satellites?.filter((sat) => {
-      const typeMatch = filterType === 'all' || sat.type === filterType;
-      const statusMatch = filterStatus === 'all' || sat.status === filterStatus;
-      return typeMatch && statusMatch;
-    });
-  }, [satellites, filterType, filterStatus]);
-
-  const sortedSatellites = useMemo(() => {
-    if (!filteredSatellites) return [];
-    return [...filteredSatellites].sort((a, b) => {
-      if (sortBy === 'orbitHeight') {
-        return a.orbitHeight - b.orbitHeight;
-      }
-      if (a[sortBy] < b[sortBy]) return -1;
-      if (a[sortBy] > b[sortBy]) return 1;
-      return 0;
-    });
-  }, [filteredSatellites, sortBy]);
-
-  const handleRowClick = useCallback((id: string) => {
-    navigate(`/satellite/${id}`);
-  }, [navigate]);
-
-  const rowRenderer = useCallback(({ index, key, style }: ListRowProps) => {
-    const sat = sortedSatellites[index];
-    return (
-      <div
-        key={key}
-        style={style}
-        className="satellite-row"
-        onClick={() => handleRowClick(sat.id)}
-        role="button"
-        tabIndex={0}
-        onKeyPress={(e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            handleRowClick(sat.id);
-          }
-        }}
-      >
-        <div className="satellite-cell">{sat.name}</div>
-        <div className="satellite-cell">{sat.type}</div>
-        <div className="satellite-cell">
-          <span className={`status-indicator ${sat.status}`}>
-            {sat.status.charAt(0).toUpperCase() + sat.status.slice(1)}
-          </span>
-        </div>
-        <div className="satellite-cell">{sat.orbitHeight} км</div>
-      </div>
-    );
-  }, [sortedSatellites, handleRowClick]);
-
-  if (isLoading) return <div>Загрузка списка спутников...</div>;
-  if (error) return <div>Ошибка при загрузке списка спутников.</div>;
+  // Сортировка спутников
+  const sortedSatellites = [...filteredSatellites].sort((a, b) => {
+    if (sortBy === 'orbitHeight') {
+      return a.orbitHeight - b.orbitHeight;
+    }
+    const aValue = a[sortBy];
+    const bValue = b[sortBy];
+    if (typeof aValue === 'string' && typeof bValue === 'string') {
+      return aValue.localeCompare(bValue);
+    }
+    return 0;
+  });
 
   return (
-    <div>
+    <div className="satellite-list">
       <FiltersAndSortControls
         sortBy={sortBy}
         setSortBy={setSortBy}
@@ -91,19 +51,24 @@ const SatelliteList: React.FC = React.memo(() => {
         filterStatus={filterStatus}
         setFilterStatus={setFilterStatus}
       />
-      <AutoSizer >
-        {({ height, width }) => (
-          <List
-            width={width}
-            height={800}
-            rowCount={sortedSatellites.length}
-            rowHeight={50}
-            rowRenderer={rowRenderer}
-          />
-        )}
-      </AutoSizer>
+      <div className="table-header">
+        <div className="header-cell">Имя</div>
+        <div className="header-cell">Тип</div>
+        <div className="header-cell">Статус</div>
+        <div className="header-cell">Высота орбиты (км)</div>
+      </div>
+      {sortedSatellites.map((satellite) => (
+        <SatelliteRow
+          key={satellite.id}
+          satellite={satellite}
+          onClick={() => {
+            // Логика при клике на строку спутника
+          }}
+          style={{}}
+        />
+      ))}
     </div>
   );
-});
+};
 
 export default SatelliteList;

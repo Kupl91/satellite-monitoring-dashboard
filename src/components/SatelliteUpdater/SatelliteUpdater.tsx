@@ -1,14 +1,16 @@
+// src/components/SatelliteUpdater/SatelliteUpdater.tsx
 import React from 'react';
 import { useUpdateSatelliteMutation } from '../../services/satellitesApi';
 import { Satellite } from '../../types/satellite';
 import { toast } from 'react-toastify';
+
 
 interface SatelliteUpdaterProps {
   satellite: Satellite;
 }
 
 const SatelliteUpdater: React.FC<SatelliteUpdaterProps> = ({ satellite }) => {
-  const [updateSatellite] = useUpdateSatelliteMutation();
+  const [updateSatellite, { isLoading }] = useUpdateSatelliteMutation();
 
   const handleUpdate = async () => {
     try {
@@ -21,8 +23,8 @@ const SatelliteUpdater: React.FC<SatelliteUpdaterProps> = ({ satellite }) => {
   };
 
   return (
-    <button onClick={handleUpdate}>
-      Обновить Спутник
+    <button onClick={handleUpdate} disabled={isLoading} className="shared-button" aria-label={`Обновить спутник ${satellite.name}`}>
+      {isLoading ? 'Обновление...' : 'Обновить Спутник'}
     </button>
   );
 };

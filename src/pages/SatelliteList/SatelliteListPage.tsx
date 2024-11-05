@@ -1,13 +1,13 @@
-// src/pages/SatelliteList.tsx
+// src/pages/SatelliteList/SatelliteListPage.tsx
 import React from 'react';
 import SatelliteList from '../../components/SatelliteList/SatelliteList';
 import SatelliteStatus from '../../components/SatelliteStatus/SatelliteStatus';
 import SatelliteMap from '../../components/SatelliteMap/SatelliteMap';
-import './SatelliteList.css';
+import './SatelliteListPage.css';
 
 const SatelliteListPage: React.FC = () => {
   return (
-    <div className="satellite-list-page">
+    <div className="satellite-list-page" role="main">
       <SatelliteStatus />
       <SatelliteMap />
       <SatelliteList />

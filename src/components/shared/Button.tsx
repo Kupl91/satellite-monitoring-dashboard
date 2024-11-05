@@ -1,4 +1,4 @@
-//src/components/shared/Button.tsx
+// src/components/shared/Button.tsx
 import React from 'react';
 import './Button.css';
 
@@ -7,7 +7,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button: React.FC<ButtonProps> = ({ label, ...props }) => (
-  <button className="shared-button" {...props}>
+  <button className="shared-button" {...props} aria-label={props['aria-label'] || label}>
     {label}
   </button>
 );

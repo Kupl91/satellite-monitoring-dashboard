@@ -13,14 +13,14 @@ export interface Temperature {
 export interface Satellite {
   id: string;
   name: string;
-  type: 'communication' | 'navigation' | 'scientific';
+  type: 'communication' | 'navigation' |'scientific';
   status: 'active' | 'inactive' | 'maintenance';
   coordinates: Coordinates;
   orbitHeight: number; // в км
   speed?: number; // км/с, может быть отсутствующим
   temperature?: Temperature; // может быть отсутствующей
   batteryLevel: number; // %
-  lastUpdate: string; // два формата даты
+  lastUpdate: string; // ISO 8601 формат
 }
 
 export interface SatellitesStatus {

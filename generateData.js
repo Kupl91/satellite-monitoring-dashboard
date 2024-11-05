@@ -1,4 +1,3 @@
-// generateData.js
 const fs = require('fs');
 
 const types = ['communication', 'navigation', 'scientific'];

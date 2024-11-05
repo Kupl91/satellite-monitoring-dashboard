@@ -1,4 +1,4 @@
-// src\pages\SatelliteDetail\SatelliteDetail.tsx
+// src/pages/SatelliteDetail/SatelliteDetail.tsx
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useGetSatelliteByIdQuery } from '../../services/satellitesApi';

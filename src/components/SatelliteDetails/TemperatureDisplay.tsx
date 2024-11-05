@@ -1,4 +1,3 @@
-//src/components/SatelliteDetails/TemperatureDisplay.tsx
 import React from 'react';
 import { Temperature } from '../../types/satellite';
 import './TemperatureDisplay.css';
@@ -11,7 +10,7 @@ const TemperatureDisplay: React.FC<TemperatureDisplayProps> = ({ temperature }) 
   if (!temperature) return null;
 
   return (
-    <div className="temperature-display">
+    <div className="temperature-display" aria-label="Информация о температуре">
       <strong>Температура:</strong>
       <ul>
         {temperature.mainSystem !== undefined && (

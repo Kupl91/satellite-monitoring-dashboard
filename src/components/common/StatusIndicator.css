@@ -1,19 +1,19 @@
 .status-indicator {
-    padding: 2px 8px;
-    border-radius: 12px;
-    color: #fff;
-    font-size: 12px;
-    text-transform: capitalize;
-  }
-  
-  .status-indicator.active {
-    background-color: #28a745; /* Зеленый */
-  }
-  
-  .status-indicator.inactive {
-    background-color: #dc3545; /* Красный */
-  }
-  
-  .status-indicator.maintenance {
-    background-color: #ffc107; /* Желтый */
-  }
+  padding: 2px 8px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.status-indicator.active {
+  background-color: #28a745; /* Зеленый */
+}
+
+.status-indicator.inactive {
+  background-color: #dc3545; /* Красный */
+}
+
+.status-indicator.maintenance {
+  background-color: #ffc107; /* Желтый */
+}

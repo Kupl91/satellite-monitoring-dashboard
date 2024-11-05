@@ -34,7 +34,8 @@
   cursor: pointer;
 }
 
-.satellite-row:hover {
+.satellite-row:hover,
+.satellite-row:focus {
   background-color: #fafafa;
 }
 

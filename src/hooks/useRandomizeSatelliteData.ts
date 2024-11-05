@@ -1,4 +1,4 @@
-//src/hooks/useRandomizeSatelliteData.ts
+// src/hooks/useRandomizeSatelliteData.ts
 import { useEffect } from 'react';
 import { Satellite } from '../types/satellite';
 import { randomizeSatelliteData, useUpdateSatelliteMutation } from '../services/satellitesApi';

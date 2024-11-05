@@ -1,4 +1,4 @@
-//src/components/SatelliteDetails/BatteryLevelDisplay.tsx
+// src/components/SatelliteDetails/BatteryLevelDisplay.tsx
 import React from 'react';
 import './BatteryLevelDisplay.css';
 
@@ -7,7 +7,7 @@ interface BatteryLevelDisplayProps {
 }
 
 const BatteryLevelDisplay: React.FC<BatteryLevelDisplayProps> = ({ batteryLevel }) => (
-  <div className="battery-level-display">
+  <div className="battery-level-display" aria-label="Уровень батареи">
     <strong>Уровень батареи:</strong> {batteryLevel}%
   </div>
 );

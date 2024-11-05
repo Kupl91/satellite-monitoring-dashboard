@@ -1,4 +1,4 @@
-//src/components/common/ErrorMessage.tsx
+// src/components/common/ErrorMessage.tsx
 import React from 'react';
 import './ErrorMessage.css';
 
@@ -7,8 +7,8 @@ interface ErrorMessageProps {
 }
 
 const ErrorMessage: React.FC<ErrorMessageProps> = ({ message }) => (
-  <div className="error-message">
-    <p>{message}</p>
+  <div className="error-message" role="alert">
+    {message}
   </div>
 );
 

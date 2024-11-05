@@ -1,4 +1,4 @@
-//src/components/SatelliteDetails/ChartsContainer/SatelliteCharts.tsx
+//src/components/SatelliteDetails/SatelliteCharts/SatelliteCharts.tsx
 import React, { useEffect, useState } from 'react';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
@@ -62,32 +62,33 @@ const SatelliteCharts: React.FC<SatelliteChartsProps> = () => {
   }, []);
 
   return (
-    <div className="charts-container">
-      <h3>Температура за последние 24 часа</h3>
-      <ResponsiveContainer width="100%" height={300}>
-        <LineChart data={temperatureData}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="time" />
-          <YAxis domain={[-50, 50]} />
-          <Tooltip />
-          <Legend />
-          <Line type="monotone" dataKey="mainSystem" stroke="#8884d8" />
-          <Line type="monotone" dataKey="communication" stroke="#82ca9d" />
-          <Line type="monotone" dataKey="powerUnit" stroke="#ff7300" />
-        </LineChart>
-      </ResponsiveContainer>
+    <div className="satellite-charts">
+      <h3 className="chart-title">Температура за последние 24 часа</h3>
+      <ResponsiveContainer width="100%" height={300} aria-label="График температуры за последние 24 часа">
+  <LineChart data={temperatureData}>
+    <CartesianGrid strokeDasharray="3 3" />
+    <XAxis dataKey="time" />
+    <YAxis domain={['auto', 'auto']} />
+    <Tooltip />
+    <Legend />
+    <Line type="monotone" dataKey="mainSystem" stroke="#8884d8" />
+    <Line type="monotone" dataKey="communication" stroke="#82ca9d" />
+    <Line type="monotone" dataKey="powerUnit" stroke="#ff7300" />
+  </LineChart>
+</ResponsiveContainer>
 
-      <h3>Уровень заряда батареи за последние 24 часа</h3>
-      <ResponsiveContainer width="100%" height={300}>
-        <LineChart data={batteryData}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="time" />
-          <YAxis domain={[0, 100]} />
-          <Tooltip />
-          <Legend />
-          <Line type="monotone" dataKey="batteryLevel" stroke="#387908" />
-        </LineChart>
-      </ResponsiveContainer>
+
+<ResponsiveContainer width="100%" height={300} aria-label="График уровня заряда батареи за последние 24 часа">
+  <LineChart data={batteryData}>
+    <CartesianGrid strokeDasharray="3 3" />
+    <XAxis dataKey="time" />
+    <YAxis domain={[0, 100]} />
+    <Tooltip />
+    <Legend />
+    <Line type="monotone" dataKey="batteryLevel" stroke="#387908" />
+  </LineChart>
+</ResponsiveContainer>
+
     </div>
   );
 };

@@ -1,4 +1,4 @@
-//src/components/SatelliteList/SatelliteRow.tsx
+// src/components/SatelliteList/SatelliteRow.tsx
 import React from 'react';
 import { Satellite } from '../../types/satellite';
 import './SatelliteRow.css';
@@ -17,11 +17,13 @@ const SatelliteRow: React.FC<SatelliteRowProps> = ({ satellite, onClick, style }
     onClick={onClick}
     role="button"
     tabIndex={0}
+    aria-pressed="false"
     onKeyPress={(e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         onClick();
       }
     }}
+    aria-label={`Спутник ${satellite.name}, тип ${satellite.type}, статус ${satellite.status}`}
   >
     <div className="satellite-cell">{satellite.name}</div>
     <div className="satellite-cell">{satellite.type}</div>

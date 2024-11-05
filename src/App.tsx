@@ -1,18 +1,17 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SatelliteListPage from './pages/SatelliteList/SatelliteList';
+import SatelliteListPage from './pages/SatelliteList/SatelliteListPage';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import 'leaflet/dist/leaflet.css';
 
-// Ленивый импорт компонента SatelliteDetail
 const SatelliteDetail = lazy(() => import('./pages/SatelliteDetail/SatelliteDetail'));
 
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="App">
+      <div className="App" role="application">
         <h1>Панель Мониторинга Спутников</h1>
         <Routes>
           <Route path="/" element={<SatelliteListPage />} />

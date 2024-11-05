@@ -19,7 +19,7 @@ const SatelliteInfoList: React.FC<SatelliteInfoListProps> = ({ satellite }) => {
   ];
 
   return (
-    <div className="satellite-info-list">
+    <div className="satellite-info-list" aria-label="Информация о спутнике">
       {info.map((item) => (
         <SatelliteInfoItem key={item.label} label={item.label} value={item.value} />
       ))}

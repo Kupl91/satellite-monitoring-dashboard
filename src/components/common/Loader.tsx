@@ -1,14 +1,14 @@
-//src\components\common\Loader.tsx
+// src/components/common/Loader.tsx
 import React from 'react';
 import './Loader.css';
 
 interface LoaderProps {
-  message?: string;
+  message: string;
 }
 
-const Loader: React.FC<LoaderProps> = ({ message = 'Загрузка...' }) => (
-  <div className="loader">
-    <div className="spinner" />
+const Loader: React.FC<LoaderProps> = ({ message }) => (
+  <div className="loader" role="status" aria-live="polite">
+    <div className="spinner" aria-hidden="true"></div>
     <span>{message}</span>
   </div>
 );
