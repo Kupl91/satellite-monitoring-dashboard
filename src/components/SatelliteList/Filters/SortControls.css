@@ -1,0 +1,12 @@
+.sort-controls {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.sort-controls select {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}

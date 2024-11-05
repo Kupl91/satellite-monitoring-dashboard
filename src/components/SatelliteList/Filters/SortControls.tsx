@@ -1,16 +1,13 @@
-
+// src/components/SatelliteList/Filters/SortControls.tsx
 import React from 'react';
-import './FiltersAndSortControls.css';
-
-interface SortControlsProps {
-  sortBy: string;
-  setSortBy: (value: string) => void;
-}
+import { SortBy } from '../../../types/satellite';
+import { SortControlsProps } from '../../../types/satellite';
+import './SortControls.css';
 
 const SortControls: React.FC<SortControlsProps> = ({ sortBy, setSortBy }) => (
   <label className="sort-controls">
     Сортировать по:
-    <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+    <select value={sortBy} onChange={(e) => setSortBy(e.target.value as SortBy)}>
       <option value="name">Имя</option>
       <option value="type">Тип</option>
       <option value="status">Статус</option>

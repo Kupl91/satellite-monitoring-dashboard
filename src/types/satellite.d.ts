@@ -1,3 +1,5 @@
+// src/types/satellite.d.ts
+
 export interface Coordinates {
   longitude: number;
   latitude: number;
@@ -15,29 +17,28 @@ export interface Satellite {
   id: string;
   name: string;
   type: 'communication' | 'navigation' | 'scientific';
-  status: SatelliteStatus; 
+  status: SatelliteStatus;
   coordinates: Coordinates;
-  orbitHeight: number; 
+  orbitHeight: number;
   speed?: number;
-  temperature?: Temperature; 
-  batteryLevel: number; 
-  lastUpdate: string; 
+  temperature?: Temperature;
+  batteryLevel: number;
+  lastUpdate: string;
 }
 
 export interface SatellitesStatus {
-    active:number ;
-    inactive:number ;
-    maintenance:number ;
+  active: number;
+  inactive: number;
+  maintenance: number;
 }
 
-interface MessageProps {    
-    message:string ;  
+interface MessageProps {
+  message: string;
 }
-  
+
 export type SortBy = 'name' | 'type' | 'status' | 'orbitHeight';
 export type FilterType = 'all' | 'communication' | 'navigation' | 'scientific';
-export type FilterStatus = 'all' | SatelliteStatus;
-
+export type FilterStatus = 'all' | 'active' | 'inactive' | 'maintenance';
 
 interface TemperatureData extends Temperature {
   time: string;
@@ -48,47 +49,63 @@ interface BatteryData {
   batteryLevel: number;
 }
 
-interface SatelliteChartsProps {
+export interface SatelliteChartsProps {
   satelliteId: string;
 }
 
-interface BatteryLevelDisplayProps {
+export interface BatteryLevelDisplayProps {
   batteryLevel: number;
 }
 
-interface SatelliteDetailsProps {
+export interface SatelliteDetailsProps {
   satellite: Satellite;
 }
 
-interface TemperatureDisplayProps {
+export interface TemperatureDisplayProps {
   temperature?: Temperature;
 }
 
-interface FiltersAndSortControlsProps {
+
+export interface SortControlsProps {
   sortBy: SortBy;
   setSortBy: (value: SortBy) => void;
+}
+
+export interface FilterTypeProps {
   filterType: FilterType;
   setFilterType: (value: FilterType) => void;
+}
+
+export interface FilterStatusProps {
   filterStatus: FilterStatus;
   setFilterStatus: (value: FilterStatus) => void;
 }
 
-interface SatelliteRowProps {
+export interface SatelliteRowProps {
   satellite: Satellite;
   onClick: () => void;
   style: React.CSSProperties;
 }
 
-interface SatelliteUpdaterProps {
+export interface SatelliteUpdaterProps {
   satellite: Satellite;
 }
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
 }
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
+export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
 
-interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
+export interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   options: { value: string; label: string }[];
+}
+
+export interface SatelliteInfoListProps {
+  satellite: Satellite;
+}
+
+export interface SatelliteInfoItemProps {
+  label: string;
+  value: string;
 }

@@ -1,21 +1,16 @@
-//src\components\SatelliteList\Filters\FilterStatus.tsx
+// src/components/SatelliteList/Filters/FilterStatus.tsx
 import React from 'react';
+import type { FilterStatus as FilterStatusType, FilterStatusProps } from '../../../types/satellite';
 import './FilterStatus.css';
-import './FiltersAndSortControls.css';
-
-interface FilterStatusProps {
-  filterStatus: string;
-  setFilterStatus: (value: string) => void;
-}
 
 const FilterStatus: React.FC<FilterStatusProps> = ({ filterStatus, setFilterStatus }) => (
   <label className="filter-status">
     Фильтр по статусу:
-    <select value={filterStatus} onChange={(e) => setFilterStatus(e.target.value)}>
+    <select value={filterStatus} onChange={(e) => setFilterStatus(e.target.value as FilterStatusType)}>
       <option value="all">Все</option>
-      <option value="active">Активны</option>
-      <option value="inactive">Неактивны</option>
-      <option value="maintenance">На обслуживании</option>
+      <option value="active">Активные</option>
+      <option value="inactive">Неактивные</option>
+      <option value="maintenance">В ремонте</option>
     </select>
   </label>
 );

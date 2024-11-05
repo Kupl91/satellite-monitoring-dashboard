@@ -1,13 +1,9 @@
 //src/components/SatelliteDetails/SatelliteInfo/SatelliteInfoList.tsx
 import React from 'react';
-import { Satellite } from '../../../types/satellite';
+import { Satellite, SatelliteInfoListProps } from '../../../types/satellite';
 import SatelliteInfoItem from './SatelliteInfoItem';
 import './SatelliteInfoList.css';
 import { formatDate } from '../../../utils/formatDate';
-
-interface SatelliteInfoListProps {
-  satellite: Satellite;
-}
 
 const SatelliteInfoList: React.FC<SatelliteInfoListProps> = ({ satellite }) => {
   const info = [

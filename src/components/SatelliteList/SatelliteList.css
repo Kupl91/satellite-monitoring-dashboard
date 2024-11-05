@@ -4,12 +4,6 @@
   margin-bottom: 20px;
 }
 
-.controls label {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
-}
-
 .table-header {
   display: flex;
   background-color: #f0f0f0;
@@ -24,8 +18,8 @@
 
 .satellite-list {
   border: 1px solid #ccc;
-  max-height: 500px; /* Ограничение высоты */
-  overflow-y: auto; /* Полоса прокрутки */
+  max-height: 500px; 
+  overflow-y: auto; 
 }
 
 .satellite-row {
@@ -54,13 +48,13 @@
 }
 
 .status-indicator.active {
-  background-color: #28a745; /* Зеленый */
+  background-color: #28a745; 
 }
 
 .status-indicator.inactive {
-  background-color: #dc3545; /* Красный */
+  background-color: #dc3545; 
 }
 
 .status-indicator.maintenance {
-  background-color: #ffc107; /* Желтый */
+  background-color: #ffc107; 
 }

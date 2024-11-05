@@ -1,16 +1,12 @@
-.filters-and-sort-controls {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
-}
 
-.filters-and-sort-controls label {
+
+.filter-status {
   display: flex;
   flex-direction: column;
   font-weight: bold;
 }
 
-.filters-and-sort-controls select {
+.filter-status select {
   padding: 5px 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
