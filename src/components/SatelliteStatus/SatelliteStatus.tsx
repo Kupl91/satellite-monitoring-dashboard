@@ -1,25 +1,60 @@
-import React from 'react';
-import { useGetSatellitesStatusQuery } from '../../services/satellitesApi';
+// src/components/SatelliteStatus/SatelliteStatus.tsx
+import React, { useEffect, useMemo } from 'react';
+import { useGetSatellitesQuery } from '../../services/satellitesApi';
 import Loader from '../common/Loader';
 import ErrorMessage from '../common/ErrorMessage';
 import './SatelliteStatus.css';
+import { toast } from 'react-toastify';
+import { Satellite, SatellitesStatus } from '../../types/satellite';
 
 const SatelliteStatus: React.FC = () => {
-  const { data, error, isLoading } = useGetSatellitesStatusQuery();
+  const { data: satellites, error, isLoading, refetch } = useGetSatellitesQuery();
 
-  if (isLoading) return <Loader message="Загрузка статуса спутников..." />;
-  if (error) return <ErrorMessage message="Ошибка при загрузке статуса спутников." />;
+  useEffect(() => {
+    if (error) {
+      toast.error('Не удалось загрузить статус спутников. Попробуйте позже.');
+      console.error(error);
+    }
+  }, [error]);
 
-  return (
-    <div className="satellite-status">
-      <h3>Статус Спутников</h3>
-      <ul>
-        <li>Активные: {data?.active}</li>
-        <li>Неактивные: {data?.inactive}</li>
-        <li>На обслуживании: {data?.maintenance}</li>
-      </ul>
-    </div>
-  );
-};
+  const status = useMemo(() => {
+    if (!satellites) return { active: 0, inactive: 0, maintenance: 0 };
 
-export default SatelliteStatus;
+    return satellites.reduce<SatellitesStatus>(
+      (acc, sat: Satellite) => {
+        switch (sat.status) {
+          case 'active':
+            acc.active += 1;
+            break;
+          case 'inactive':
+            acc.inactive += 1;
+            break;
+          case 'maintenance':
+            acc.maintenance += 1;
+               break;
+             default:
+               break;
+           }
+           return acc;
+         },
+         { active: 0, inactive: 0, maintenance: 0 }
+       );
+     }, [satellites]);
+
+     if (isLoading) return <Loader message="Загрузка статуса спутников..." />;
+     if (error) return <ErrorMessage message="Ошибка при загрузке статуса спутников." />;
+
+     return (
+       <div className="satellite-status">
+         <h3>Статус Спутников</h3>
+         <ul>
+           <li>Активные: {status.active}</li>
+           <li>Неактивные: {status.inactive}</li>
+           <li>На обслуживании: {status.maintenance}</li>
+         </ul>
+         <button onClick={() => refetch()}>Повторить попытку</button>
+       </div>
+     );
+   };
+
+   export default SatelliteStatus;
