@@ -24,6 +24,8 @@
 
 .satellite-list {
   border: 1px solid #ccc;
+  max-height: 500px; /* Ограничение высоты */
+  overflow-y: auto; /* Полоса прокрутки */
 }
 
 .satellite-row {
