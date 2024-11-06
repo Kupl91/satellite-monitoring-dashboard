@@ -1,11 +1,9 @@
 import React from 'react';
-import { Satellite, SatelliteRowProps } from '../../types/satellite';
+import { SatelliteRowProps } from '../../types/satellite';
 import './SatelliteRow.css';
 import StatusIndicator from '../common/StatusIndicator';
 
-
-
-const SatelliteRow: React.FC<SatelliteRowProps> = ({ satellite, onClick, style }) => (
+const SatelliteRow: React.FC<SatelliteRowProps> = React.memo(({ satellite, onClick, style }) => (
   <div
     className="satellite-row"
     style={style}
@@ -27,6 +25,6 @@ const SatelliteRow: React.FC<SatelliteRowProps> = ({ satellite, onClick, style }
     </div>
     <div className="satellite-cell">{satellite.orbitHeight} км</div>
   </div>
-);
+));
 
 export default SatelliteRow;

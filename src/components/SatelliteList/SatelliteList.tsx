@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { useGetSatellitesQuery } from '../../services/satellitesApi';
 import SatelliteRow from './SatelliteRow';
 import Loader from '../common/Loader';
@@ -26,23 +26,27 @@ const SatelliteList: React.FC = () => {
   if (error) return <ErrorMessage message="Ошибка при загрузке спутников." />;
   if (!satellites) return <p>Спутники не найдены.</p>;
 
-  const filteredSatellites = satellites.filter((sat) => {
-    const typeMatch = filterType === 'all' || sat.type === filterType;
-    const statusMatch = filterStatus === 'all' || sat.status === filterStatus;
-    return typeMatch && statusMatch;
-  });
+  const filteredSatellites = useMemo(() => {
+    return satellites.filter((sat) => {
+      const typeMatch = filterType === 'all' || sat.type === filterType;
+      const statusMatch = filterStatus === 'all' || sat.status === filterStatus;
+      return typeMatch && statusMatch;
+    });
+  }, [satellites, filterType, filterStatus]);
 
-  const sortedSatellites = [...filteredSatellites].sort((a, b) => {
-    if (sortBy === 'orbitHeight') {
-      return a.orbitHeight - b.orbitHeight;
-    }
-    const aValue = a[sortBy];
-    const bValue = b[sortBy];
-    if (typeof aValue === 'string' && typeof bValue === 'string') {
-      return aValue.localeCompare(bValue);
-    }
-    return 0;
-  });
+  const sortedSatellites = useMemo(() => {
+    return [...filteredSatellites].sort((a, b) => {
+      if (sortBy === 'orbitHeight') {
+        return a.orbitHeight - b.orbitHeight;
+      }
+      const aValue = a[sortBy];
+      const bValue = b[sortBy];
+      if (typeof aValue === 'string' && typeof bValue === 'string') {
+        return aValue.localeCompare(bValue);
+      }
+      return 0;
+    });
+  }, [filteredSatellites, sortBy]);
 
   const rowHeight = 40;
   const itemCount = sortedSatellites.length;
@@ -72,4 +76,4 @@ const SatelliteList: React.FC = () => {
   );
 };
 
-export default SatelliteList;
+export default React.memo(SatelliteList);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Tooltip } from 'react-leaflet';
 import { useNavigate } from 'react-router-dom';
 import L from 'leaflet';
@@ -38,16 +38,16 @@ const icons = {
   }),
 };
 
-const MapView: React.FC = () => {
+const MapView: React.FC = React.memo(() => {
   const { data: satellites, error, isLoading } = useGetSatellitesQuery();
   const navigate = useNavigate();
 
+  const handleMarkerClick = useCallback((id: string) => {
+    navigate(`/satellite/${id}`);
+  }, [navigate]);
+
   if (isLoading) return <Loader message="Загрузка карты..." />;
   if (error) return <ErrorMessage message="Ошибка при загрузке карты." />;
-
-  const handleMarkerClick = (id: string) => {
-    navigate(`/satellite/${id}`);
-  };
 
   const bounds: L.LatLngBoundsExpression = [
     [-90, -180],
@@ -106,6 +106,6 @@ const MapView: React.FC = () => {
       )}
     </MapContainer>
   );
-};
+});
 
 export default MapView;
