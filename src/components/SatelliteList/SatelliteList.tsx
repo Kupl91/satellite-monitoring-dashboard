@@ -72,4 +72,4 @@ const SatelliteList: React.FC = () => {
   );
 };
 
-export default React.memo(SatelliteList);
+export default SatelliteList;
