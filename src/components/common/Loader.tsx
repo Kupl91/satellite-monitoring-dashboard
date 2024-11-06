@@ -1,4 +1,3 @@
-// src/components/common/Loader.tsx
 import React from 'react';
 import './Loader.css';
 import {MessageProps } from '../../types/satellite';

@@ -1,46 +1,71 @@
-# Getting Started with Create React App
+# Satellite Monitoring Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Описание
+Satellite Monitoring Dashboard — это приложение для мониторинга спутников, предоставляющее информацию о их статусе, положении, температуре и уровне заряда батареи. Приложение визуализирует данные с помощью графиков и интерактивной карты.
 
-## Available Scripts
+## Установка
 
-In the project directory, you can run:
+1. **Клонируйте репозиторий:**
+   ```bash
+   git clone https://github.com/Kupl91/satellite-monitoring-dashboard.git //final brench
+   ```
 
-### `npm start`
+2. **Перейдите в директорию проекта:**
+   ```bash
+   cd satellite-monitoring-dashboard
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. **Установите зависимости:**
+   ```bash
+   npm install
+   ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+4. **Запустите проект:**
+    ```bash
+    npm start 
+    ```
+    Эта команда запустит клиентскую часть приложения.
 
-### `npm test`
+## Скрипты
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `npm start`: Запускает приложение.
+- `npm run build`: Сборка приложения для продакшена.
+- `npm test`: Запускает тесты.
+- `npm run eject`: Извлекает конфигурацию проекта.
 
-### `npm run build`
+## Используемые технологии
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React**: Библиотека для создания пользовательских интерфейсов.
+- **TypeScript**: Язык программирования, расширяющий JavaScript добавлением типов.
+- **Redux Toolkit**: Упрощенная работа с состоянием приложения.
+- **React Router**: Маршрутизация в приложении.
+- **React Leaflet**: Работа с картами геолокации.
+- **Recharts**: Библиотека для построения графиков.
+- **JSON Server**: Фейковый REST API сервер для тестирования данных локально (если используется).
+- **React Testing Library**: Инструменты для тестирования React компонентов.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Компоненты
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. `SortControls`: Компонент для сортировки списка спутников по имени, типу и статусу.
+2. `FilterType`: Компонент фильтрации спутников по типу (коммуникация, навигация и т.д.).
+3. `FilterStatus`: Компонент фильтрации спутников по статусу (активные, неактивные).
+4. `TemperatureDisplay`: Компонент отображения температуры спутника в реальном времени или за последний период времени.
+5. `BatteryLevelDisplay`: Компонент отображения уровня заряда батареи спутника.
+6. `SatelliteDetails`: Компонент отображения детальной информации о выбранном спутнике (например его путь).
+7. `SatelliteInfoList`: Отображает список информации о каждом из спутников на экране выбора или детализации .
+8.  `SatelliteCharts` : Отображает графики температуры/уровня заряда за определенный период времени .
+9 .  `MapView` : Интерактивная карта со всеми актуальными позициями .
+10 .  `StatusIndicator` : Показ состояния каждого из конечных устройств мониторинга . 
+11 .  `Loader & ErrorMessage` : Показывают состояние загрузки данных при выполнении операций 
 
-### `npm run eject`
+## Конфигурация
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Параметры конфигурации проекта описаны в файле [package.json](./package.json). Здесь вы можете увидеть все используемые зависимости и версии библиотек.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Контакты
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Если у вас есть вопросы или предложения по улучшению проекта:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Email: [pavelkuplensky@yandex.ru](mailto:pavelkuplensky@yandex.ru)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+GitHub Profile: [Kupl91](https://github.com/Kupl91)

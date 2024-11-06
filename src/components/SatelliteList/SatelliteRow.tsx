@@ -1,4 +1,3 @@
-// src/components/SatelliteList/SatelliteRow.tsx
 import React from 'react';
 import { Satellite, SatelliteRowProps } from '../../types/satellite';
 import './SatelliteRow.css';

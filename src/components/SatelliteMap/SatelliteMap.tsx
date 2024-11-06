@@ -1,4 +1,3 @@
-// src/components/SatelliteMap/SatelliteMap.tsx
 import React from 'react';
 import MapView from '../MapView/MapView';
 import './SatelliteMap.css';

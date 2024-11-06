@@ -1,4 +1,3 @@
-// src/components/SatelliteDetails/BatteryLevelDisplay.tsx
 import React from 'react';
 import './BatteryLevelDisplay.css';
 import { BatteryLevelDisplayProps } from '../../types/satellite';

@@ -1,5 +1,3 @@
-// src/types/satellite.d.ts
-
 export interface Coordinates {
   longitude: number;
   latitude: number;

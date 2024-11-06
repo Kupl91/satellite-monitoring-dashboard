@@ -1,4 +1,3 @@
-// src/components/shared/Button.tsx
 import React from 'react';
 import './Button.css';
 import { ButtonProps } from '../../types/satellite';

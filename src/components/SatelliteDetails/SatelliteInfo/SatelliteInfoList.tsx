@@ -1,4 +1,3 @@
-//src/components/SatelliteDetails/SatelliteInfo/SatelliteInfoList.tsx
 import React from 'react';
 import { Satellite, SatelliteInfoListProps } from '../../../types/satellite';
 import SatelliteInfoItem from './SatelliteInfoItem';

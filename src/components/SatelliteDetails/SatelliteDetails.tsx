@@ -1,4 +1,3 @@
-// src/components/SatelliteDetails/SatelliteDetails.tsx
 import React from 'react';
 import { SatelliteDetailsProps } from '../../types/satellite';
 import './SatelliteDetails.css';

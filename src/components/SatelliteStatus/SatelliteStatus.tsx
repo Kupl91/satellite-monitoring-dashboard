@@ -1,4 +1,3 @@
-// src/components/SatelliteStatus/SatelliteStatus.tsx
 import React, { useEffect, useMemo } from 'react';
 import { useGetSatellitesQuery } from '../../services/satellitesApi';
 import Loader from '../common/Loader';

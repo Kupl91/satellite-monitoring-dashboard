@@ -1,4 +1,3 @@
-// src/components/shared/Input.tsx
 import React from 'react';
 import './Input.css';
 import { InputProps } from '../../types/satellite';

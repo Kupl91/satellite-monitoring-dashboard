@@ -1,4 +1,3 @@
-// src/components/SatelliteList/Filters/SortControls.tsx
 import React from 'react';
 import { SortBy } from '../../../types/satellite';
 import { SortControlsProps } from '../../../types/satellite';

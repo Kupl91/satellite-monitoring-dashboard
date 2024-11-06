@@ -1,4 +1,3 @@
-// src/components/shared/Select.tsx
 import React from 'react';
 import './Select.css';
 import { SelectProps } from '../../types/satellite';

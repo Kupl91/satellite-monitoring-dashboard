@@ -1,4 +1,3 @@
-// src/components/common/StatusIndicator.tsx
 import React from 'react';
 import './StatusIndicator.css';  
 import { SatelliteStatus } from '../../types/satellite';  

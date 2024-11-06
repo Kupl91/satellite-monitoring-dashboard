@@ -1,4 +1,3 @@
-// src/components/SatelliteUpdater/SatelliteUpdater.tsx
 import React from 'react';
 import { useUpdateSatelliteMutation } from '../../services/satellitesApi';
 import { Satellite, SatelliteUpdaterProps } from '../../types/satellite';

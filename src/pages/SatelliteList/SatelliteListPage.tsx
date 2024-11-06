@@ -1,4 +1,3 @@
-// src/pages/SatelliteList/SatelliteListPage.tsx
 import React from 'react';
 import SatelliteList from '../../components/SatelliteList/SatelliteList';
 import SatelliteStatus from '../../components/SatelliteStatus/SatelliteStatus';

@@ -1,4 +1,3 @@
-// src/components/SatelliteList/Filters/FilterStatus.tsx
 import React from 'react';
 import type { FilterStatus as FilterStatusType, FilterStatusProps } from '../../../types/satellite';
 import './FilterStatus.css';
