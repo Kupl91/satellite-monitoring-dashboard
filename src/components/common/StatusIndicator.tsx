@@ -3,7 +3,7 @@ import './StatusIndicator.css';
 import { SatelliteStatus } from '../../types/satellite';  
 
 interface StatusIndicatorProps {  
-   status :SatelliteStatus ;   // Используем общий тип для статуса.
+   status :SatelliteStatus ;
 }  
 
 const StatusIndicator :React.FC< StatusIndicatorProps > = ({ status }) => (   

@@ -4,8 +4,8 @@ const types = ['communication', 'navigation', 'scientific'];
 const statuses = ['active', 'inactive', 'maintenance'];
 
 const generateSatellite = (id) => {
-  const hasSpeed = Math.random() > 0.1; // 10% без скорости
-  const hasTemperature = Math.random() > 0.05; // 5% без температуры
+  const hasSpeed = Math.random() > 0.1; 
+  const hasTemperature = Math.random() > 0.05;
 
   const satellite = {
     id: `SAT${id.toString().padStart(3, '0')}`,
@@ -16,16 +16,16 @@ const generateSatellite = (id) => {
       longitude: parseFloat((Math.random() * 360 - 180).toFixed(6)),
       latitude: parseFloat((Math.random() * 180 - 90).toFixed(6)),
     },
-    orbitHeight: Math.floor(Math.random() * (36000 - 160 + 1)) + 160, // от 160 до 36000 км
+    orbitHeight: Math.floor(Math.random() * (36000 - 160 + 1)) + 160, 
     speed: hasSpeed ? parseFloat((Math.random() * (8 - 7) + 7).toFixed(3)) : undefined,
     temperature: hasTemperature
       ? {
-          mainSystem: parseFloat((Math.random() * 100 - 50).toFixed(2)), // -50°C to +50°C
+          mainSystem: parseFloat((Math.random() * 100 - 50).toFixed(2)), 
           communication: parseFloat((Math.random() * 100 - 50).toFixed(2)),
           powerUnit: parseFloat((Math.random() * 100 - 50).toFixed(2)),
         }
       : undefined,
-    batteryLevel: Math.floor(Math.random() * 101), // 0% to 100%
+    batteryLevel: Math.floor(Math.random() * 101),
     lastUpdate:
       Math.random() > 0.5
         ? new Date().toISOString()

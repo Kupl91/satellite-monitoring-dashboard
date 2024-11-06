@@ -1,4 +1,3 @@
-// src/slices/satellitesSlice.ts
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { Satellite } from '../types/satellite';
 

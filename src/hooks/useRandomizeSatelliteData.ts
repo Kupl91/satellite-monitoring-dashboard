@@ -10,7 +10,7 @@ const useRandomizeSatelliteDataHook = (satellites: Satellite[] | undefined) => {
 
     const interval = setInterval(() => {
       randomizeSatelliteData(satellites, updateSatellite);
-    }, 30000); // Обновление каждые 30 секунд
+    }, 30000); 
 
     return () => clearInterval(interval);
   }, [satellites, updateSatellite]);
