@@ -7,7 +7,7 @@ Satellite Monitoring Dashboard — это приложение для монит
 
 1. **Клонируйте репозиторий:**
    ```bash
-   git clone https://github.com/Kupl91/satellite-monitoring-dashboard.git //final brench
+   git clone https://github.com/Kupl91/satellite-monitoring-dashboard.git //final branch
    ```
 
 2. **Перейдите в директорию проекта:**
