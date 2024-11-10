@@ -1,3 +1,19 @@
 .satellite-list-page {
   padding: 10px;
 }
+
+.satellite-list-page button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.satellite-list-page button:hover,
+.satellite-list-page button:focus {
+  background-color: #0056b3;
+}
